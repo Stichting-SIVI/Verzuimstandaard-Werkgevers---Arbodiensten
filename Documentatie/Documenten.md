@@ -1,10 +1,10 @@
 **Functional message: Hierarchic**
 
-Business chain: *Verzuim Datamodel 0.2*
+Business chain: *Verzuim Datamodel*
 
 Transaction type: *Documenten*
 
-Functional message: ***Documenten 2019***
+Functional message: ***Documenten 2020***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-23 juni 2019
+1 juli 2020
 
 Summary
 
@@ -62,7 +62,7 @@ BERICHT ALGEMEEN 1..1, R
 
 *code list:* Versienummer bericht (subset selected)
 
-00003 Versienummer 3
+00004 Versienummer 4
 
 **<u>Aanmaakdatum</u>**
 
@@ -257,9 +257,11 @@ nadien formeel gewijzigd.
 
 Bron: NEN 1888: 2002 - Geslacht
 
-*code list:* Geslacht (subset selected)
+*code list:* Geslacht (all selected)
 
 M Man
+
+O Onbekend/niet gespecificeerd
 
 V Vrouw
 
@@ -355,9 +357,11 @@ nadien formeel gewijzigd.
 
 Bron: NEN 1888: 2002 - Geslacht
 
-*code list:* Geslacht (subset selected)
+*code list:* Geslacht (all selected)
 
 M Man
+
+O Onbekend/niet gespecificeerd
 
 V Vrouw
 
@@ -664,9 +668,11 @@ nadien formeel gewijzigd.
 
 Bron: NEN 1888: 2002 - Geslacht
 
-*code list:* Geslacht (subset selected)
+*code list:* Geslacht (all selected)
 
 M Man
+
+O Onbekend/niet gespecificeerd
 
 V Vrouw
 
@@ -867,9 +873,11 @@ nadien formeel gewijzigd.
 
 Bron: NEN 1888: 2002 - Geslacht
 
-*code list:* Geslacht (subset selected)
+*code list:* Geslacht (all selected)
 
 M Man
+
+O Onbekend/niet gespecificeerd
 
 V Vrouw
 

@@ -1,10 +1,10 @@
 **Functional message: Hierarchic**
 
-Business chain: *Verzuim Datamodel 0.2*
+Business chain: *Verzuim Datamodel*
 
 Transaction type: *Basistransactie Verzuim*
 
-Functional message: ***Verzuimmeldingen 2019***
+Functional message: ***Verzuimmeldingen 2020***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-23 juni 2019
+1 juli 2020
 
 Summary
 
@@ -86,7 +86,7 @@ BERICHT ALGEMEEN 1..1, R
 
 *code list:* Versienummer bericht (subset selected)
 
-00007 Versienummer 7
+00008 Versienummer 8
 
 **<u>Aanmaakdatum</u>**
 
@@ -105,6 +105,13 @@ BERICHT ALGEMEEN 1..1, R
 *xml tag:* IdInzndr
 
 Bilateraal afgesproken codering betreffende de inzender van het bericht.
+
+**Gebruikt softwarepakket R an..35**
+
+*xml tag:* GebrSwPakket
+
+Beschrijving van het softwarepakket dat de aanleveraar heeft gebruikt
+voor de vervaardiging van het bericht.
 
 **<u>Ontvanger</u>**
 
@@ -532,9 +539,11 @@ nadien formeel gewijzigd.
 
 Bron: NEN 1888: 2002 - Geslacht
 
-*code list:* Geslacht (subset selected)
+*code list:* Geslacht (all selected)
 
 M Man
+
+O Onbekend/niet gespecificeerd
 
 V Vrouw
 
@@ -732,9 +741,11 @@ nadien formeel gewijzigd.
 
 Bron: NEN 1888: 2002 - Geslacht
 
-*code list:* Geslacht (subset selected)
+*code list:* Geslacht (all selected)
 
 M Man
+
+O Onbekend/niet gespecificeerd
 
 V Vrouw
 
@@ -1075,9 +1086,15 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 05 Privé e-mail adres
 
+06 Zakelijk e-mail adres
+
 07 Privé vaste telefoon
 
+08 Zakelijk vaste telefoon
+
 09 Privé mobiele telefoon
+
+10 Zakelijk mobiele telefoon
 
 **<u>Nummer</u>**
 
@@ -1320,7 +1337,7 @@ Postcode van de standplaats waar de werknemer is tewerkgesteld.
 Bilateraal afgesproken codering ten behoeve van de verdeling van het
 werk.
 
-**<u>Duur contract</u>**
+**<u>Gegevens over arbeidsovereenkomst</u>**
 
 **Code contract onbepaalde / bepaalde tijd O an1**
 
@@ -1339,35 +1356,15 @@ O Onbepaalde tijd
 
 **<u>Beschrijving aantal uren e.d.</u>**
 
-**Contractueel aantal uren per week O n..6,2**
+**Aantal contracturen per week O n..5,2**
 
-*xml tag:* CntrctUrnWk
+*xml tag:* AantCtrcturenPWk
 
-Het aantal uren - conform het arbeidscontract dat van toepassing is bij
-de werkgever - waarop arbeid wordt verricht bij een volledige werkweek.
+Het tussen de werkgever en werknemer vast overeengekomen aantal uren per
+week zoals opgenomen in of af te leiden uit de CAO of individuele
+arbeidsovereenkomst.
 
-**Deeltijdfactor NVS O n..5,2**
-
-*xml tag:* DltfctNVS
-
-Bedoeld voor werknemers die niet voor de volledige werktijd in dienst
-zijn. Vaak vindt berekening plaats door op weekbasis het aantal werkuren
-te delen op het aantal werkuren bij een volledige aanstelling
-(bijvoorbeeld: bij korter werken 24/38 = 0,63; bij langer werken 40/36 =
-1,11).
-
-Berekening: Deeltijdfactor= Werkuren week/Werkuren week volledige
-aanstelling
-
-Bron:
-
-Berekening van ziekteverzuim
-
-NVS Standaard voor verzuimregistratie
-
-Nationale Verzuimstatistiek
-
-November 2004
+Bron: Loonaangifte
 
 **Soort variabele werktijden, code O an2**
 
@@ -1741,8 +1738,6 @@ Bron: Arbo Unie
 
 12 Einde WGA
 
-13 Ziek uit dienst
-
 99 Onbekend
 
 **<u>WAZO gegevens</u>**
@@ -1852,9 +1847,11 @@ nadien formeel gewijzigd.
 
 Bron: NEN 1888: 2002 - Geslacht
 
-*code list:* Geslacht (subset selected)
+*code list:* Geslacht (all selected)
 
 M Man
+
+O Onbekend/niet gespecificeerd
 
 V Vrouw
 
@@ -2025,9 +2022,11 @@ nadien formeel gewijzigd.
 
 Bron: NEN 1888: 2002 - Geslacht
 
-*code list:* Geslacht (subset selected)
+*code list:* Geslacht (all selected)
 
 M Man
+
+O Onbekend/niet gespecificeerd
 
 V Vrouw
 

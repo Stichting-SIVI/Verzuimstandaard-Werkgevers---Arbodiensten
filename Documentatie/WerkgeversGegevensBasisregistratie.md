@@ -1,10 +1,10 @@
 **Functional message: Hierarchic**
 
-Business chain: *Verzuim Datamodel 0.2*
+Business chain: *Verzuim Datamodel*
 
 Transaction type: *Basistransactie Verzuim*
 
-Functional message: ***Werkgevers Gegevens Basisregistratie 2019***
+Functional message: ***Werkgevers Gegevens Basisregistratie 2020***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-23 juni 2019
+1 juli 2020
 
 Summary
 
@@ -84,7 +84,7 @@ BERICHT ALGEMEEN 1..1, R
 
 *code list:* Versienummer bericht (subset selected)
 
-00007 Versienummer 7
+00008 Versienummer 8
 
 **<u>Aanmaakdatum</u>**
 
@@ -103,6 +103,13 @@ BERICHT ALGEMEEN 1..1, R
 *xml tag:* IdInzndr
 
 Bilateraal afgesproken codering betreffende de inzender van het bericht.
+
+**Gebruikt softwarepakket R an..35**
+
+*xml tag:* GebrSwPakket
+
+Beschrijving van het softwarepakket dat de aanleveraar heeft gebruikt
+voor de vervaardiging van het bericht.
 
 **<u>Ontvanger</u>**
 
@@ -651,6 +658,8 @@ Bron: NEN 1888: 2002 - Geslacht
 
 M Man
 
+O Onbekend/niet gespecificeerd
+
 V Vrouw
 
 **Rol contactpersoon, code R an2**
@@ -1059,6 +1068,8 @@ Bron: NEN 1888: 2002 - Geslacht
 *code list:* Geslacht (subset selected)
 
 M Man
+
+O Onbekend/niet gespecificeerd
 
 V Vrouw
 
