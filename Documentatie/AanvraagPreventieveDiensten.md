@@ -4,7 +4,7 @@ Business chain: *Verzuim Datamodel*
 
 Transaction type: *Basistransactie Verzuim*
 
-Functional message: ***Aanvraag preventieve diensten 2021***
+Functional message: ***Aanvraag preventieve diensten 2022***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-25 juni 2021
+1 juli 2022
 
 Summary
 
@@ -295,6 +295,8 @@ huisnummer.
 
 *xml tag:* Enddat
 
+De datum van de laatste dag waarop de gegevens geldig zijn.
+
 **<u>Generiek voor adres</u>**
 
 **Postcode R an6**
@@ -365,6 +367,8 @@ De gegevens van een postbusadres in Nederland.
 **Einddatum O an10**
 
 *xml tag:* Enddat
+
+De datum van de laatste dag waarop de gegevens geldig zijn.
 
 **<u>Generiek voor adres</u>**
 
@@ -774,6 +778,8 @@ huisnummer.
 
 *xml tag:* Enddat
 
+De datum van de laatste dag waarop de gegevens geldig zijn.
+
 **<u>Generiek voor adres</u>**
 
 **Postcode R an6**
@@ -859,6 +865,8 @@ en huisnummer.
 **Einddatum O an10**
 
 *xml tag:* Enddat
+
+De datum van de laatste dag waarop de gegevens geldig zijn.
 
 **<u>Generiek voor adres buitenland</u>**
 
@@ -1102,7 +1110,8 @@ O Onbepaalde tijd
 
 Het tussen de werkgever en werknemer vast overeengekomen aantal uren per
 week zoals opgenomen in of af te leiden uit de CAO of individuele
-arbeidsovereenkomst.
+arbeidsovereenkomst of dat voortvloeit uit de publiekrechtelijke
+aanstelling of de fictieve dienstbetrekking.
 
 Bron: Loonaangifte
 
@@ -1449,6 +1458,8 @@ KOSTENPLAATS 0..9, O
 **Einddatum O an10**
 
 *xml tag:* Enddat
+
+De datum van de laatste dag waarop de gegevens geldig zijn.
 
 **<u>Gegevens kostenplaats</u>**
 

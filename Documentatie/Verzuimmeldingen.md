@@ -4,7 +4,7 @@ Business chain: *Verzuim Datamodel*
 
 Transaction type: *Basistransactie Verzuim*
 
-Functional message: ***Verzuimmeldingen 2021***
+Functional message: ***Verzuimmeldingen 2022***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-25 juni 2021
+1 juli 2022
 
 Summary
 
@@ -52,7 +52,7 @@ Werkgever 1..\*, R
 
 3 Verzuim 1..99, R
 
-4 Contactpersoon 0..9, O
+4 Contactpersoon 1..9, R
 
 5 Communicatie 1..9, R
 
@@ -60,7 +60,7 @@ Werkgever 1..\*, R
 
 4 Vrije Tekst 0..99, O
 
-3 Contactpersoon 0..9, O
+3 Contactpersoon 1..9, R
 
 4 Communicatie 1..9, R
 
@@ -86,7 +86,7 @@ BERICHT ALGEMEEN 1..1, R
 
 *code list:* Versienummer bericht (subset selected)
 
-00009 Versienummer 9
+00010 Versienummer 10
 
 **<u>Aanmaakdatum</u>**
 
@@ -333,6 +333,8 @@ huisnummer.
 
 *xml tag:* Enddat
 
+De datum van de laatste dag waarop de gegevens geldig zijn.
+
 **<u>Generiek voor adres</u>**
 
 **Postcode R an6**
@@ -403,6 +405,8 @@ De gegevens van een postbusadres in Nederland.
 **Einddatum O an10**
 
 *xml tag:* Enddat
+
+De datum van de laatste dag waarop de gegevens geldig zijn.
 
 **<u>Generiek voor adres</u>**
 
@@ -894,6 +898,8 @@ Bijvoorbeeld de naam van een verpleeginrichting.
 
 *xml tag:* Enddat
 
+De datum van de laatste dag waarop de gegevens geldig zijn.
+
 **<u>Generiek voor adres</u>**
 
 **Postcode R an6**
@@ -1001,6 +1007,8 @@ Bijvoorbeeld de naam van een verpleeginrichting.
 **Einddatum O an10**
 
 *xml tag:* Enddat
+
+De datum van de laatste dag waarop de gegevens geldig zijn.
 
 **<u>Generiek voor adres buitenland</u>**
 
@@ -1135,6 +1143,8 @@ Unieke code voor het dienstverband van de werknemer.
 **Einddatum O an10**
 
 *xml tag:* Enddat
+
+De datum van de laatste dag waarop de gegevens geldig zijn.
 
 **<u>Einde dienstverband</u>**
 
@@ -1294,7 +1304,8 @@ O Onbepaalde tijd
 
 Het tussen de werkgever en werknemer vast overeengekomen aantal uren per
 week zoals opgenomen in of af te leiden uit de CAO of individuele
-arbeidsovereenkomst.
+arbeidsovereenkomst of dat voortvloeit uit de publiekrechtelijke
+aanstelling of de fictieve dienstbetrekking.
 
 Bron: Loonaangifte
 
@@ -1397,6 +1408,8 @@ Bron: Loonaangifte.
 
 *xml tag:* Enddat
 
+De datum van de laatste dag waarop de gegevens geldig zijn.
+
 **<u>Uren per week</u>**
 
 **Aantal contracturen per week R n..5,2**
@@ -1425,6 +1438,8 @@ KOSTENPLAATS 0..9, O
 **Einddatum O an10**
 
 *xml tag:* Enddat
+
+De datum van de laatste dag waarop de gegevens geldig zijn.
 
 **<u>Gegevens kostenplaats</u>**
 
@@ -1489,7 +1504,9 @@ Oorspronkelijke ingangsdatum mutatie verzuim.
 
 *xml tag:* VrzmgvlId
 
-Unieke identificatie van het verzuimgeval.
+Unieke identificatie van het verzuimgeval voor één dienstverband. Als
+een werknemer verzuim heeft op meerdere dienstverbanden, geldt per
+dienstverband een unieke "Verzuimgeval identificatie".
 
 Uniek per werkgever ook in de tijd.
 
@@ -1592,6 +1609,12 @@ rooster.
 
 Datum waarop het einde van het verzuim van de persoon is gemeld bij zijn
 werkgever.
+
+**Datum verwacht herstel O an10**
+
+*xml tag:* DatVrwHrstl
+
+De verwachtte datum hersteld, op basis van een inschatting.
 
 **<u>Gegevens over verzuim</u>**
 
@@ -1705,7 +1728,7 @@ Bron: Arbo Unie
 
 *xml tag:* PrcArbther
 
-CONTACTPERSOON 0..9, O
+CONTACTPERSOON 1..9, R
 
 *werkgever - werknemer - dienstverband - verzuim - CONTACTPERSOON*
 
@@ -1880,7 +1903,7 @@ Vrije tekst om een nadere toelichting te geven.
 
 *xml tag:* VrijeTekst
 
-CONTACTPERSOON 0..9, O
+CONTACTPERSOON 1..9, R
 
 *werkgever - werknemer - dienstverband - CONTACTPERSOON*
 

@@ -4,7 +4,7 @@ Business chain: *Verzuim Datamodel*
 
 Transaction type: *Basistransactie Verzuim*
 
-Functional message: ***Dienstverbanden 2021***
+Functional message: ***Dienstverbanden 2022***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-25 juni 2021
+1 juli 2022
 
 Summary
 
@@ -285,6 +285,8 @@ huisnummer.
 
 *xml tag:* Enddat
 
+De datum van de laatste dag waarop de gegevens geldig zijn.
+
 **<u>Generiek voor adres</u>**
 
 **Postcode R an6**
@@ -355,6 +357,8 @@ De gegevens van een postbusadres in Nederland.
 **Einddatum O an10**
 
 *xml tag:* Enddat
+
+De datum van de laatste dag waarop de gegevens geldig zijn.
 
 **<u>Generiek voor adres</u>**
 
@@ -669,6 +673,8 @@ Unieke code voor het dienstverband van de werknemer.
 
 *xml tag:* Enddat
 
+De datum van de laatste dag waarop de gegevens geldig zijn.
+
 **<u>Einde dienstverband</u>**
 
 **Reden einde dienstverband, code O an2**
@@ -827,7 +833,8 @@ O Onbepaalde tijd
 
 Het tussen de werkgever en werknemer vast overeengekomen aantal uren per
 week zoals opgenomen in of af te leiden uit de CAO of individuele
-arbeidsovereenkomst.
+arbeidsovereenkomst of dat voortvloeit uit de publiekrechtelijke
+aanstelling of de fictieve dienstbetrekking.
 
 Bron: Loonaangifte
 
@@ -930,6 +937,8 @@ Bron: Loonaangifte.
 
 *xml tag:* Enddat
 
+De datum van de laatste dag waarop de gegevens geldig zijn.
+
 **<u>Uren per week</u>**
 
 **Aantal contracturen per week R n..5,2**
@@ -958,6 +967,8 @@ KOSTENPLAATS 0..9, O
 **Einddatum O an10**
 
 *xml tag:* Enddat
+
+De datum van de laatste dag waarop de gegevens geldig zijn.
 
 **<u>Gegevens kostenplaats</u>**
 

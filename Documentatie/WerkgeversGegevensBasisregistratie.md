@@ -4,7 +4,7 @@ Business chain: *Verzuim Datamodel*
 
 Transaction type: *Basistransactie Verzuim*
 
-Functional message: ***Werkgevers Gegevens Basisregistratie 2021***
+Functional message: ***Werkgevers Gegevens Basisregistratie 2022***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-25 juni 2021
+1 juli 2022
 
 Summary
 
@@ -356,6 +356,8 @@ Het contract dat de werkgever met de arbodienst heeft gesloten.
 
 *xml tag:* Enddat
 
+De datum van de laatste dag waarop de gegevens geldig zijn.
+
 PERSONEELSSTERKTE 0..999, O
 
 *werkgever - PERSONEELSSTERKTE*
@@ -448,6 +450,8 @@ huisnummer.
 
 *xml tag:* Enddat
 
+De datum van de laatste dag waarop de gegevens geldig zijn.
+
 **<u>Generiek voor adres</u>**
 
 **Postcode R an6**
@@ -518,6 +522,8 @@ De gegevens van een postbusadres in Nederland.
 **Einddatum O an10**
 
 *xml tag:* Enddat
+
+De datum van de laatste dag waarop de gegevens geldig zijn.
 
 **<u>Generiek voor adres</u>**
 
@@ -743,6 +749,8 @@ ORGANISATIE EENHEID 0..9999, O
 
 *xml tag:* Enddat
 
+De datum van de laatste dag waarop de gegevens geldig zijn.
+
 **<u>Naam / referentie</u>**
 
 **Naam organisatie-eenheid R an..70**
@@ -795,6 +803,8 @@ Het contract dat de werkgever met de arbodienst heeft gesloten.
 **Einddatum O an10**
 
 *xml tag:* Enddat
+
+De datum van de laatste dag waarop de gegevens geldig zijn.
 
 PERSONEELSSTERKTE 0..999, O
 
@@ -888,6 +898,8 @@ huisnummer.
 
 *xml tag:* Enddat
 
+De datum van de laatste dag waarop de gegevens geldig zijn.
+
 **<u>Generiek voor adres</u>**
 
 **Postcode R an6**
@@ -958,6 +970,8 @@ De gegevens van een postbusadres in Nederland.
 **Einddatum O an10**
 
 *xml tag:* Enddat
+
+De datum van de laatste dag waarop de gegevens geldig zijn.
 
 **<u>Generiek voor adres</u>**
 
@@ -1174,6 +1188,8 @@ deel uitmaakt.
 
 *xml tag:* Enddat
 
+De datum van de laatste dag waarop de gegevens geldig zijn.
+
 **<u>Gegevens over de verzuimverzekering</u>**
 
 **Soort verzuimverzekering, code R an2**
@@ -1209,6 +1225,8 @@ KOSTENPLAATS 0..9999, O
 **Einddatum O an10**
 
 *xml tag:* Enddat
+
+De datum van de laatste dag waarop de gegevens geldig zijn.
 
 **<u>Gegevens kostenplaats</u>**
 
@@ -1342,6 +1360,8 @@ deel uitmaakt.
 **Einddatum O an10**
 
 *xml tag:* Enddat
+
+De datum van de laatste dag waarop de gegevens geldig zijn.
 
 **<u>Gegevens over de verzuimverzekering</u>**
 

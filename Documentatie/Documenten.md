@@ -4,7 +4,7 @@ Business chain: *Verzuim Datamodel*
 
 Transaction type: *Documenten*
 
-Functional message: ***Documenten 2021***
+Functional message: ***Documenten 2022***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-25 juni 2021
+1 juli 2022
 
 Summary
 
@@ -446,13 +446,15 @@ DOCUMENT 1..9999, R
 
 303 Plan van aanpak
 
-305 Advies AAG
+305 Advies Praktijkondersteuner Bedrijfsarts (POB)
 
 306 Advies aanvullende interventie werkgever
 
 451 Inzetbaarheidsadvies
 
 453 Functionele mogelijkheden lijst
+
+558 Melding UWV
 
 601 Rapportage preventieve dienst
 
@@ -823,7 +825,9 @@ VERZUIM 0..1, O
 
 *xml tag:* VrzmgvlId
 
-Unieke identificatie van het verzuimgeval.
+Unieke identificatie van het verzuimgeval voor één dienstverband. Als
+een werknemer verzuim heeft op meerdere dienstverbanden, geldt per
+dienstverband een unieke "Verzuimgeval identificatie".
 
 Uniek per werkgever ook in de tijd.
 

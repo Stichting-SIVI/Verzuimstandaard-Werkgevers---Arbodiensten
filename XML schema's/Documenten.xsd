@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:str="http://www.sivi.org/Verzuimmanagement/Documenten/2021" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.sivi.org/Verzuimmanagement/Documenten/2021" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2021.0">
+<xsd:schema xmlns:str="http://www.sivi.org/Verzuimmanagement/Documenten/2022" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.sivi.org/Verzuimmanagement/Documenten/2022" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2022.0">
 	<xsd:element name="Documenten">
 		<xsd:complexType>
 			<xsd:sequence>
@@ -140,6 +140,7 @@
 										<xsd:enumeration value="306"/>
 										<xsd:enumeration value="451"/>
 										<xsd:enumeration value="453"/>
+										<xsd:enumeration value="558"/>
 										<xsd:enumeration value="601"/>
 										<xsd:enumeration value="700"/>
 										<xsd:enumeration value="701"/>
