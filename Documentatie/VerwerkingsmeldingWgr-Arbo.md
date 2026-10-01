@@ -4,7 +4,7 @@ Business chain: *Verzuim Datamodel*
 
 Transaction type: *Verwerking*
 
-Functional message: ***Verwerkingsmelding wgr - arbo 2025***
+Functional message: ***Verwerkingsmelding wgr - arbo 2026***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-4 juli 2025
+24 juni 2026
 
 Summary
 

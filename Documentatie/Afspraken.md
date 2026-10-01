@@ -4,7 +4,7 @@ Business chain: *Verzuim Datamodel*
 
 Transaction type: *Afspraken*
 
-Functional message: ***Afspraken 2025***
+Functional message: ***Afspraken 2026***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-4 juli 2025
+24 juni 2026
 
 Summary
 
@@ -60,7 +60,7 @@ BERICHT ALGEMEEN 1..1, V
 
 *code list:* Versienummer bericht (subset selected)
 
-00005 Versienummer 5
+00006 Versienummer 6
 
 **<u>Aanmaakdatum</u>**
 
@@ -136,7 +136,7 @@ WERKGEVER 0..1, F
 
 *WERKGEVER*
 
-*xml tag:*
+*xml tag:* Wrkgvr
 
 Bij het beschrijven van de kenmerken van de Werkgever wordt in een
 aantal gevallen de term Inhoudingsplichtige gebruikt.
@@ -195,7 +195,7 @@ ARBODIENST 0..1, F
 
 *ARBODIENST*
 
-*xml tag:*
+*xml tag:* Arbdnst
 
 **<u>Handelsnaam</u>**
 
@@ -221,7 +221,7 @@ CONTACTPERSOON 0..1, F
 
 *arbodienst - CONTACTPERSOON*
 
-*xml tag:*
+*xml tag:* Cntprsn
 
 **<u>Naamgegevens</u>**
 
@@ -290,7 +290,7 @@ COMMUNICATIE 0..9, F
 
 *arbodienst - contactpersoon - COMMUNICATIE*
 
-*xml tag:*
+*xml tag:* Com
 
 Communicatie is de verzameling van gegevens die het partijen mogelijk
 maakt met hulpmiddelen met elkaar te communiceren.
@@ -314,6 +314,10 @@ maakt met hulpmiddelen met elkaar te communiceren.
 **Nummer/adres communicatie V an..512**
 
 *xml tag:* NrCom
+
+Het veld bevat een geldige duiding van de soort communicatie, zoals
+e-mailadres of telefoonummer. In het geval van een telefoonnummer is het
+formaat in het bericht volgens ITU-T E.164: +31201234567
 
 AFSPRAAK 1..999, V
 
@@ -376,6 +380,20 @@ Duur van de afspraak in uren.
 05 Gewijzigd
 
 06 No show
+
+**Vorm afspraak, code F an2**
+
+*xml tag:* VormAfspraakCd
+
+De vorm waarin de afspraak plaatsvindt.
+
+*code list:* Vorm Afspraak (all selected)
+
+01 Telefonisch
+
+02 Videocall
+
+03 Fysiek
 
 **Omschrijving soort afspraak V an..70**
 
@@ -504,7 +522,7 @@ STRAATADRES NEDERLAND 0..1, F
 
 *afspraak - STRAATADRES NEDERLAND*
 
-*xml tag:*
+*xml tag:* StrAdrNl
 
 Een adres in Nederland dat wordt bepaald aan de hand van straatnaam en
 huisnummer.
@@ -641,7 +659,7 @@ DIENSTVERBAND 0..9, F
 
 *afspraak - DIENSTVERBAND*
 
-*xml tag:*
+*xml tag:* Dnstvbnd
 
 **<u>Identificatie</u>**
 
@@ -666,7 +684,7 @@ VERZUIM 0..1, F
 
 *afspraak - dienstverband - VERZUIM*
 
-*xml tag:*
+*xml tag:* Vrzm
 
 **<u>Data</u>**
 

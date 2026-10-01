@@ -4,7 +4,7 @@ Business chain: *Verzuim Datamodel*
 
 Transaction type: *Documenten*
 
-Functional message: ***Documenten 2025***
+Functional message: ***Documenten 2026***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-4 juli 2025
+24 juni 2026
 
 Summary
 
@@ -64,7 +64,7 @@ BERICHT ALGEMEEN 1..1, V
 
 *code list:* Versienummer bericht (subset selected)
 
-00005 Versienummer 5
+00006 Versienummer 6
 
 **<u>Aanmaakdatum</u>**
 
@@ -296,6 +296,10 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 *xml tag:* NrCom
 
+Het veld bevat een geldige duiding van de soort communicatie, zoals
+e-mailadres of telefoonummer. In het geval van een telefoonnummer is het
+formaat in het bericht volgens ITU-T E.164: +31201234567
+
 CONTACTPERSOON ZENDER 0..1, F
 
 *CONTACTPERSOON ZENDER*
@@ -396,6 +400,10 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 *xml tag:* NrCom
 
+Het veld bevat een geldige duiding van de soort communicatie, zoals
+e-mailadres of telefoonummer. In het geval van een telefoonnummer is het
+formaat in het bericht volgens ITU-T E.164: +31201234567
+
 DOCUMENT 1..9999, V
 
 *DOCUMENT*
@@ -429,6 +437,8 @@ DOCUMENT 1..9999, V
 100 Probleemanalyse
 
 104 Bijstelling probleemanalyse
+
+111 Digitale intake
 
 158 Tussentijdse evaluatie
 
@@ -865,7 +875,7 @@ AFSPRAAK 0..1, F
 
 **<u>Uniek kenmerk afspraak</u>**
 
-**Identificatie afspraak F an..40**
+**Identificatie afspraak V an..40**
 
 *xml tag:* IdAfspraak
 

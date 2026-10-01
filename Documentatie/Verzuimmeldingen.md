@@ -4,7 +4,7 @@ Business chain: *Verzuim Datamodel*
 
 Transaction type: *Basistransactie Verzuim*
 
-Functional message: ***Verzuimmeldingen 2025***
+Functional message: ***Verzuimmeldingen 2026***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-8 juli 2025
+1 juli 2026
 
 Summary
 
@@ -38,7 +38,7 @@ Werkgever 1..\*, V
 
 2 Communicatie 0..9, F
 
-2 Dienstverband 1..99, V
+2 Dienstverband 1..999, V
 
 3 Arbeidsrelatie 0..1, F
 
@@ -80,7 +80,7 @@ BERICHT ALGEMEEN 1..1, V
 
 *code list:* Versienummer bericht (subset selected)
 
-00012 Versienummer 12
+00013 Versienummer 13
 
 **<u>Aanmaakdatum</u>**
 
@@ -321,6 +321,10 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 *xml tag:* NrCom
 
+Het veld bevat een geldige duiding van de soort communicatie, zoals
+e-mailadres of telefoonummer. In het geval van een telefoonnummer is het
+formaat in het bericht volgens ITU-T E.164: +31201234567
+
 CONTACTPERSOON 0..9, F
 
 *werkgever - CONTACTPERSOON*
@@ -455,6 +459,10 @@ maakt met hulpmiddelen met elkaar te communiceren.
 **Nummer/adres communicatie V an..512**
 
 *xml tag:* NrCom
+
+Het veld bevat een geldige duiding van de soort communicatie, zoals
+e-mailadres of telefoonummer. In het geval van een telefoonnummer is het
+formaat in het bericht volgens ITU-T E.164: +31201234567
 
 WERKNEMER 1..\*, V
 
@@ -922,7 +930,11 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 *xml tag:* NrCom
 
-DIENSTVERBAND 1..99, V
+Het veld bevat een geldige duiding van de soort communicatie, zoals
+e-mailadres of telefoonummer. In het geval van een telefoonnummer is het
+formaat in het bericht volgens ITU-T E.164: +31201234567
+
+DIENSTVERBAND 1..999, V
 
 *werkgever - werknemer - DIENSTVERBAND*
 
@@ -1429,6 +1441,10 @@ De verwachtte datum hersteld, op basis van een inschatting.
 
 *xml tag:* PrcVrzm
 
+Het door de werkgever geregistreerde percentage van de arbeidsomvang
+waarin de werknemer wegens ziekte niet werkt. Het percentage is
+gebaseerd op de ureninzetbaarheid en loonwaarde.
+
 **Bijzondere reden start verzuim, code F an2**
 
 *xml tag:* BijzRdnStartVrzmCd
@@ -1685,6 +1701,10 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 *xml tag:* NrCom
 
+Het veld bevat een geldige duiding van de soort communicatie, zoals
+e-mailadres of telefoonummer. In het geval van een telefoonnummer is het
+formaat in het bericht volgens ITU-T E.164: +31201234567
+
 ACTIE 0..99, F
 
 *werkgever - werknemer - dienstverband - verzuim - ACTIE*
@@ -1864,3 +1884,7 @@ maakt met hulpmiddelen met elkaar te communiceren.
 **Nummer/adres communicatie V an..512**
 
 *xml tag:* NrCom
+
+Het veld bevat een geldige duiding van de soort communicatie, zoals
+e-mailadres of telefoonummer. In het geval van een telefoonnummer is het
+formaat in het bericht volgens ITU-T E.164: +31201234567

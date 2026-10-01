@@ -4,7 +4,7 @@ Business chain: *Verzuim Datamodel*
 
 Transaction type: *Basistransactie Verzuim*
 
-Functional message: ***Werkgevers Gegevens Basisregistratie 2025***
+Functional message: ***Werkgevers Gegevens Basisregistratie 2026***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-4 juli 2025
+24 juni 2026
 
 Summary
 
@@ -584,6 +584,10 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 *xml tag:* NrCom
 
+Het veld bevat een geldige duiding van de soort communicatie, zoals
+e-mailadres of telefoonummer. In het geval van een telefoonnummer is het
+formaat in het bericht volgens ITU-T E.164: +31201234567
+
 CONTACTPERSOON 1..9, V
 
 *werkgever - CONTACTPERSOON*
@@ -718,6 +722,10 @@ maakt met hulpmiddelen met elkaar te communiceren.
 **Nummer/adres communicatie V an..512**
 
 *xml tag:* NrCom
+
+Het veld bevat een geldige duiding van de soort communicatie, zoals
+e-mailadres of telefoonummer. In het geval van een telefoonnummer is het
+formaat in het bericht volgens ITU-T E.164: +31201234567
 
 ORGANISATIE EENHEID 0..9999, F
 
@@ -1143,6 +1151,10 @@ maakt met hulpmiddelen met elkaar te communiceren.
 **Nummer/adres communicatie V an..512**
 
 *xml tag:* NrCom
+
+Het veld bevat een geldige duiding van de soort communicatie, zoals
+e-mailadres of telefoonummer. In het geval van een telefoonnummer is het
+formaat in het bericht volgens ITU-T E.164: +31201234567
 
 VERZEKERAAR/VOLMACHT 0..9, F
 
