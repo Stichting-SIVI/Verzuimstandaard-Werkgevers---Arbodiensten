@@ -4,7 +4,7 @@ Business chain: *Verzuim Datamodel*
 
 Transaction type: *Basistransactie Verzuim*
 
-Functional message: ***Verzuimmeldingen 2024***
+Functional message: ***Verzuimmeldingen 2025***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-15 juli 2024
+8 juli 2025
 
 Summary
 
@@ -29,8 +29,6 @@ Werkgever 1..\*, V
 2 Communicatie 1..9, V
 
 1 Werknemer 1..\*, V
-
-2 Bankrekening 0..1, F
 
 2 Partner 0..1, F
 
@@ -82,7 +80,7 @@ BERICHT ALGEMEEN 1..1, V
 
 *code list:* Versienummer bericht (subset selected)
 
-00011 Versienummer 11
+00012 Versienummer 12
 
 **<u>Aanmaakdatum</u>**
 
@@ -467,12 +465,6 @@ WERKNEMER 1..\*, V
 Een werknemer is de natuurlijke persoon met wie een inkomstenverhouding
 binnen de loonadministratie bestaat.
 
-**<u>Wijze waarop de gegevens verwerkt moeten worden</u>**
-
-**Ingangsdatum mutatie F an10**
-
-*xml tag:* IngdatMut
-
 **<u>Identificerende gegevens</u>**
 
 **Burgerservicenummer F n..9**
@@ -646,33 +638,15 @@ V Vrouw
 Een unieke identificatie van de werknemer bij de werkgever. Een eenmaal
 uitgegeven identificatie wordt niet hergebruikt.
 
-**Identificatie werknemer oud F an..40**
+**Valt werknemer onder no-risk polis J/N F a1**
 
-*xml tag:* IdWrknmrOud
+*xml tag:* WrknmrNoriskJN
 
-BANKREKENING 0..1, F
+*code list:* Logische eenheid (subset selected)
 
-*werkgever - werknemer - BANKREKENING*
+J Ja
 
-*xml tag:* BnkGiro
-
-**<u>Gegevens rekeningnummer</u>**
-
-**IBAN F an..34**
-
-*xml tag:* Iban
-
-Het wereldwijde unieke nummer van een bankrekening.
-
-Norminstantie: ISO - 13616
-
-**BIC F an..11**
-
-*xml tag:* Bic
-
-De unieke (internationale) identificatie van een bank.
-
-Norminstantie: SWIFT
+N Nee
 
 PARTNER 0..1, F
 
@@ -749,18 +723,6 @@ Ziekenhuis, verpleeghuis, etc.
 *xml tag:* NmVrpladrs
 
 Bijvoorbeeld de naam van een verpleeginrichting.
-
-**<u>Periode geldig</u>**
-
-**Ingangsdatum F an10**
-
-*xml tag:* Ingdat
-
-**Einddatum F an10**
-
-*xml tag:* Enddat
-
-De datum van de laatste dag waarop de gegevens geldig zijn.
 
 **<u>Generiek voor adres</u>**
 
@@ -859,18 +821,6 @@ Ziekenhuis, verpleeghuis, etc.
 *xml tag:* NmVrpladrs
 
 Bijvoorbeeld de naam van een verpleeginrichting.
-
-**<u>Periode geldig</u>**
-
-**Ingangsdatum F an10**
-
-*xml tag:* Ingdat
-
-**Einddatum F an10**
-
-*xml tag:* Enddat
-
-De datum van de laatste dag waarop de gegevens geldig zijn.
 
 **<u>Generiek voor adres buitenland</u>**
 
@@ -978,12 +928,6 @@ DIENSTVERBAND 1..99, V
 
 *xml tag:* Dnstvbnd
 
-**<u>Wijze waarop de gegevens verwerkt moeten worden</u>**
-
-**Ingangsdatum mutatie F an10**
-
-*xml tag:* IngdatMut
-
 **<u>Identificatie</u>**
 
 **Identificatie dienstverband V an..40**
@@ -991,10 +935,6 @@ DIENSTVERBAND 1..99, V
 *xml tag:* IdDnstvbnd
 
 Unieke code voor het dienstverband van de werknemer.
-
-**Identificatie dienstverband oud F an..40**
-
-*xml tag:* IdDnstvbndOud
 
 **<u>Datums</u>**
 
@@ -1044,10 +984,6 @@ De code waarmee de natuurlijk persoon in de administratie van de
 inhoudingsplichtige bekend is.
 
 Bron: Loonaangifte.
-
-**Personeelsnummer oud F an..35**
-
-*xml tag:* PersNrOud
 
 **<u>Contractnummer</u>**
 
@@ -1276,10 +1212,6 @@ Dit wordt ook wel aanstelling genoemd.
 
 *xml tag:* IdArbeidsrelatie
 
-**Identificatie arbeidsrelatie oud F an..40**
-
-*xml tag:* IdArbeidsrelatieOud
-
 **Personeelsnummer F an..35**
 
 *xml tag:* PersNr
@@ -1289,19 +1221,11 @@ inhoudingsplichtige bekend is.
 
 Bron: Loonaangifte.
 
-**Personeelsnummer oud F an..35**
-
-*xml tag:* PersNrOud
-
 **<u>Data</u>**
 
 **Ingangsdatum V an10**
 
 *xml tag:* Ingdat
-
-**Ingangsdatum mutatie F an10**
-
-*xml tag:* IngdatMut
 
 **Einddatum F an10**
 
@@ -1323,22 +1247,6 @@ KOSTENPLAATS 0..9, F
 *werkgever - werknemer - dienstverband - KOSTENPLAATS*
 
 *xml tag:* Kostenplaats
-
-**<u>Periode geldig</u>**
-
-**Ingangsdatum F an10**
-
-*xml tag:* Ingdat
-
-**Ingangsdatum mutatie F an10**
-
-*xml tag:* IngdatMut
-
-**Einddatum F an10**
-
-*xml tag:* Enddat
-
-De datum van de laatste dag waarop de gegevens geldig zijn.
 
 **<u>Gegevens kostenplaats</u>**
 

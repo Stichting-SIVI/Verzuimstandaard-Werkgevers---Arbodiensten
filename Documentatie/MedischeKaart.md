@@ -4,13 +4,15 @@ Business chain: *Verzuim Datamodel*
 
 Transaction type: *Documenten*
 
-Functional message: ***Medische kaart 2024***
+Functional message: ***Medische kaart 2025***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
+XML Tag Set: *Standard XML*
+
 **Copyright SIVI**
 
-15 juli 2024
+4 juli 2025
 
 Summary
 
@@ -36,15 +38,21 @@ BERICHT ALGEMEEN 1..1, V
 
 *BERICHT ALGEMEEN*
 
+*xml tag:* BrAlg
+
 **<u>Soort bericht + versienummer</u>**
 
 **Bericht, code V an..5**
+
+*xml tag:* BrCd
 
 *code list:* Berichtcode (subset selected)
 
 00501 Medische kaart
 
 **Versienummer bericht, code V an..5**
+
+*xml tag:* VnrBrCd
 
 *code list:* Versienummer bericht (subset selected)
 
@@ -53,6 +61,8 @@ BERICHT ALGEMEEN 1..1, V
 **<u>Functie bericht</u>**
 
 **Functie bericht, code V an2**
+
+*xml tag:* FunctieBrCd
 
 *code list:* SIVI (subset selected)
 
@@ -64,19 +74,27 @@ BERICHT ALGEMEEN 1..1, V
 
 **Aanmaakdatum bericht V an10**
 
+*xml tag:* AandatBr
+
 **<u>Aanmaaktijd</u>**
 
 **Aanmaaktijd bericht V an8**
 
+*xml tag:* AantijdBr
+
 **<u>Inzender</u>**
 
 **Identificatie inzender V an..40**
+
+*xml tag:* IdInzndr
 
 Bilateraal afgesproken codering betreffende de inzender van het bericht.
 
 **<u>Ontvanger</u>**
 
 **Identificatie ontvanger V an..40**
+
+*xml tag:* IdOntvngr
 
 Bilateraal afgesproken codering betreffende de ontvanger
 (eindbestemming) van het bericht.
@@ -85,9 +103,13 @@ Bilateraal afgesproken codering betreffende de ontvanger
 
 **Berichtreferentienummer V an..512**
 
+*xml tag:* Berrefnr
+
 **<u>Testindicatie</u>**
 
 **Test J/N V a1**
+
+*xml tag:* TestJN
 
 Geeft aan of het een testbericht betreft.
 
@@ -101,6 +123,8 @@ N Nee
 
 **Ontvangstbevestiging gewenst J/N V a1**
 
+*xml tag:* OntvngstbevJN
+
 Geeft aan of de inzender van het bericht een ontvangstbevestiging wenst.
 
 *code list:* Logische eenheid (subset selected)
@@ -113,12 +137,16 @@ WERKGEVER 0..1, F
 
 *WERKGEVER*
 
+*xml tag:* Wrkgvr
+
 Bij het beschrijven van de kenmerken van de Werkgever wordt in een
 aantal gevallen de term Inhoudingsplichtige gebruikt.
 
 **<u>Handelsnaam</u>**
 
 **Handelsnaam organisatie V an..100**
+
+*xml tag:* HndlsnmOrg
 
 De naam waaronder een organisatie aan het maatschappelijk verkeer
 deelneemt.
@@ -129,12 +157,16 @@ Norminstantie: SUWI
 
 **Inschrijvingsnummer Kamer van Koophandel F n..8**
 
+*xml tag:* InschrijvingsnrKvK
+
 Een identificerend nummer dat de Kamer van Koophandel toekent aan
 ondernemingen zoals vermeld in de Handelsregisterwet.
 
 Bron: SUWI Gegevens Register
 
 **Vestigingsnummer F n..12**
+
+*xml tag:* VestigingsnrHandelsregister
 
 Een identificerend nummer voor een vestiging in het Handelsregister.
 
@@ -144,11 +176,15 @@ Norminstantie: Handelsregister
 
 **Identificatie werkgever bij arbodienst V an..40**
 
+*xml tag:* IdWrkgvrArbdnst
+
 De identificatiecode die de arbodienst heeft aangeleverd aan de
 werkgever waardoor de werkgever wordt onderscheden van andere werkgevers
 in de administratie van de arbodienst.
 
 **Aansluitnummer gegevensuitwisseling Arbodienst V an..70**
+
+*xml tag:* AansltnrGeguitwlngArbdnst
 
 Het aansluitnummer voor de gegevensuitwisseling dat de arbodienst heeft
 aangeleverd aan de werkgever waardoor de werkgever wordt onderscheden
@@ -158,6 +194,8 @@ van andere werkgevers in de administratie van de arbodienst.
 
 **Loonheffingennummer F an..12**
 
+*xml tag:* Lhnr
+
 Een door de Belastingdienst toegekende identificatie voor de
 administratieve eenheid waaronder de werkgever bekend is en
 loonheffingen afdraagt.
@@ -166,19 +204,29 @@ DOCUMENT 1..9999, V
 
 *DOCUMENT*
 
+*xml tag:* Document
+
 **<u>Uniek kenmerk van het document</u>**
 
 **Identificatie document V an..40**
 
+*xml tag:* IdDocument
+
 **Identificatie document oud F an..40**
+
+*xml tag:* IdDocumentOud
 
 **<u>Datum dat het document is aangemaakt</u>**
 
 **Datum document V an10**
 
+*xml tag:* DatDocument
+
 **<u>Kenmerken document</u>**
 
 **Soort document, code V an3**
+
+*xml tag:* SrtDocumentCd
 
 *code list:* Document (subset selected)
 
@@ -187,6 +235,8 @@ DOCUMENT 1..9999, V
 921 Medische kaart
 
 **Bestand type, code F an2**
+
+*xml tag:* BestandTypCd
 
 *code list:* Bestandtype (all selected)
 
@@ -220,9 +270,13 @@ DOCUMENT 1..9999, V
 
 **Bestandsnaam F an..70**
 
+*xml tag:* Bestandsnm
+
 **<u>Het document</u>**
 
 **Datastring V an..\***
+
+*xml tag:* Datastring
 
 Datastring bevat het document.
 
@@ -230,12 +284,16 @@ WERKNEMER 1..1, V
 
 *document - WERKNEMER*
 
+*xml tag:* Wrknmr
+
 Een werknemer is de natuurlijke persoon met wie een inkomstenverhouding
 binnen de loonadministratie bestaat.
 
 **<u>Identificerende gegevens</u>**
 
 **Burgerservicenummer V n..9**
+
+*xml tag:* SofiNr
 
 Een door de Gemeente aan een natuurlijk persoon toegekend uniek
 administratief nummer, ook wel BSN genoemd.
@@ -246,6 +304,8 @@ BSN dan moet in ieder geval het Personeelsnummer doorgegeven worden.
 Bron: Loonaangifte.
 
 **Geboortedatum V an10**
+
+*xml tag:* Gebdat
 
 Datum waarop de natuurlijke persoon is geboren.
 
@@ -264,6 +324,8 @@ Bron: Loonaangifte.
 **<u>Naamgegevens</u>**
 
 **Achternaam/Achternamen V an..200**
+
+*xml tag:* Achternaam
 
 Achternaam/achternamen inclusief voorvoegsel(s).
 
@@ -289,6 +351,8 @@ Bron: Genootschap Onze Taal
 
 **Voorletters V a..6**
 
+*xml tag:* Voorl
+
 De verzameling letters die wordt gevormd door de eerste letter van alle
 in volgorde voorkomende voornamen.
 
@@ -299,11 +363,15 @@ Bron: Loonaangifte.
 
 **Roepnaam F a..35**
 
+*xml tag:* Roepnaam
+
 Voornaam waarmee iemand wordt aangesproken.
 
 **<u>Overige gegevens</u>**
 
 **Geslachtsaanduiding, code V an1**
+
+*xml tag:* GslchtCd
 
 De sekse van een persoon, zoals bij de geboorte formeel vastgesteld of
 nadien formeel gewijzigd.
@@ -322,6 +390,8 @@ V Vrouw
 
 **Identificatie werknemer F an..40**
 
+*xml tag:* IdWrknmr
+
 Een unieke identificatie van de werknemer bij de werkgever. Een eenmaal
 uitgegeven identificatie wordt niet hergebruikt.
 
@@ -329,9 +399,13 @@ DIENSTVERBAND 0..9, F
 
 *document - DIENSTVERBAND*
 
+*xml tag:* Dnstvbnd
+
 **<u>Identificatie</u>**
 
 **Identificatie dienstverband F an..40**
+
+*xml tag:* IdDnstvbnd
 
 Unieke code voor het dienstverband van de werknemer.
 
@@ -339,9 +413,13 @@ Unieke code voor het dienstverband van de werknemer.
 
 **Ingangsdatum F an10**
 
+*xml tag:* Ingdat
+
 **<u>Personeelsnummer behorende bij het dienstverband</u>**
 
 **Personeelsnummer F an..35**
+
+*xml tag:* PersNr
 
 De code waarmee de natuurlijk persoon in de administratie van de
 inhoudingsplichtige bekend is.
@@ -352,13 +430,19 @@ PREVENTIEVE DIENST 0..1, F
 
 *document - dienstverband - PREVENTIEVE DIENST*
 
+*xml tag:* PrevDienst
+
 **<u>Identificatie</u>**
 
 **Identificatie preventieve dienst V an..40**
 
+*xml tag:* IdPrevDienst
+
 **<u>Preventieve dienst</u>**
 
 **Preventieve dienst, code V an2**
+
+*xml tag:* PreventDienst
 
 *code list:* Preventieve dienst (all selected)
 
@@ -408,19 +492,27 @@ PREVENTIEVE DIENST 0..1, F
 
 **Preventieve dienst toevoeging F an..70**
 
+*xml tag:* PevDienstToev
+
 Aanvulling op Preventieve dienst, code
 
 **Datum uitvoering preventieve dienst F an10**
+
+*xml tag:* DatTotPrevD
 
 Uiterste datum dat de (volgende) preventieve dienst uitgevoerd moet
 worden.
 
 **Verbijzondering prev. dienst, code F an..10**
 
+*xml tag:* VerbPrevDCode
+
 Een bilateraal afgesproken code. Dit betreft een verbijzondering van de
 Code preventieve dienst.
 
 **Verbijz. prev. dienst, omschrijving F an..70**
+
+*xml tag:* VerbPrevDOms
 
 Een omschrijving van de aangevraagde keuring die overeenkomt met
 Verbijzondering prev. dienst, code.
@@ -429,9 +521,13 @@ VERZUIM 0..1, F
 
 *document - dienstverband - VERZUIM*
 
+*xml tag:* Vrzm
+
 **<u>Identificatie</u>**
 
 **Verzuimgeval identificatie F an..40**
+
+*xml tag:* VrzmgvlId
 
 Unieke identificatie van het verzuimgeval voor één dienstverband. Als
 een werknemer verzuim heeft op meerdere dienstverbanden, geldt per
@@ -442,6 +538,8 @@ Uniek per werkgever ook in de tijd.
 **<u>Data</u>**
 
 **Datum eerste verzuimdag V an10**
+
+*xml tag:* DatEerstVrzmdg
 
 De eerste dag waarop iemand zou moeten werken maar verzuimt, of
 verminderd inzetbaar is, wegens ziekte of een ongeval. Is er sprake van
@@ -467,15 +565,23 @@ AFSPRAAK 0..1, F
 
 *document - AFSPRAAK*
 
+*xml tag:* Afspraak
+
 **<u>Uniek kenmerk afspraak</u>**
 
 **Identificatie afspraak F an..40**
+
+*xml tag:* IdAfspraak
 
 Unieke identificatie van de afspraak bij de zender.
 
 **Datum afspraak V an10**
 
+*xml tag:* DatAfspraak
+
 **Tijdstip afspraak F an8**
+
+*xml tag:* TijdAfspraak
 
 Begintijd van de afspraak
 
@@ -483,9 +589,13 @@ Begintijd van de afspraak
 
 **Duur afspraak F n..5,2**
 
+*xml tag:* DuurAfspraak
+
 Duur van de afspraak in uren.
 
 **Status afspraak, code F an2**
+
+*xml tag:* StatusAfspraakCd
 
 *code list:* Status afspraak (all selected)
 
@@ -503,13 +613,19 @@ Duur van de afspraak in uren.
 
 **Omschrijving soort afspraak F an..70**
 
+*xml tag:* OmsSrtAfspraak
+
 UITVOERDER AFSPRAAK 0..1, F
 
 *document - afspraak - UITVOERDER AFSPRAAK*
 
+*xml tag:* UitvoerderAfspraak
+
 **<u>Naamgegevens</u>**
 
 **Achternaam/Achternamen V an..200**
+
+*xml tag:* Achternaam
 
 Achternaam/achternamen inclusief voorvoegsel(s).
 
@@ -535,6 +651,8 @@ Bron: Genootschap Onze Taal
 
 **Voorletters F a..6**
 
+*xml tag:* Voorl
+
 De verzameling letters die wordt gevormd door de eerste letter van alle
 in volgorde voorkomende voornamen.
 
@@ -545,11 +663,15 @@ Bron: Loonaangifte.
 
 **Roepnaam F a..35**
 
+*xml tag:* Roepnaam
+
 Voornaam waarmee iemand wordt aangesproken.
 
 **<u>Overige gegevens</u>**
 
 **Geslachtsaanduiding, code F an1**
+
+*xml tag:* GslchtCd
 
 De sekse van een persoon, zoals bij de geboorte formeel vastgesteld of
 nadien formeel gewijzigd.
@@ -565,3 +687,5 @@ O Onbekend/niet gespecificeerd
 V Vrouw
 
 **Naam functie V an..35**
+
+*xml tag:* NmFnct

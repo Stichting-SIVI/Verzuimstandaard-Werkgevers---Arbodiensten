@@ -4,7 +4,7 @@ Business chain: *Verzuim Datamodel*
 
 Transaction type: *Basistransactie Verzuim*
 
-Functional message: ***Werknemers Gegevens 2024***
+Functional message: ***Werknemers Gegevens 2025***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-9 juli 2024
+4 juli 2025
 
 Summary
 
@@ -29,8 +29,6 @@ Werkgever 1..\*, V
 2 Communicatie 1..9, V
 
 1 Werknemer 1..\*, V
-
-2 Bankrekening 0..1, F
 
 2 Partner 0..1, F
 
@@ -72,7 +70,7 @@ BERICHT ALGEMEEN 1..1, V
 
 *code list:* Versienummer bericht (subset selected)
 
-00005 Versienummer 5
+00006 Versienummer 6
 
 **<u>Aanmaakdatum</u>**
 
@@ -611,30 +609,6 @@ uitgegeven identificatie wordt niet hergebruikt.
 **Identificatie werknemer oud F an..40**
 
 *xml tag:* IdWrknmrOud
-
-BANKREKENING 0..1, F
-
-*werkgever - werknemer - BANKREKENING*
-
-*xml tag:* BnkGiro
-
-**<u>Gegevens rekeningnummer</u>**
-
-**IBAN F an..34**
-
-*xml tag:* Iban
-
-Het wereldwijde unieke nummer van een bankrekening.
-
-Norminstantie: ISO - 13616
-
-**BIC F an..11**
-
-*xml tag:* Bic
-
-De unieke (internationale) identificatie van een bank.
-
-Norminstantie: SWIFT
 
 PARTNER 0..1, F
 
