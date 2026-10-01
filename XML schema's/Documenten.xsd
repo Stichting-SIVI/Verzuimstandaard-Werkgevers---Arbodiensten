@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:str="http://www.sivi.org/Verzuimmanagement/Documenten/2020" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.sivi.org/Verzuimmanagement/Documenten/2020" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2020.1">
+<xsd:schema xmlns:str="http://www.sivi.org/Verzuimmanagement/Documenten/2021" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.sivi.org/Verzuimmanagement/Documenten/2021" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2021.0">
 	<xsd:element name="Documenten">
 		<xsd:complexType>
 			<xsd:sequence>
@@ -18,7 +18,7 @@
 								<xsd:simpleType>
 									<xsd:restriction base="xsd:string">
 										<xsd:maxLength value="5"/>
-										<xsd:enumeration value="00004"/>
+										<xsd:enumeration value="00005"/>
 									</xsd:restriction>
 								</xsd:simpleType>
 							</xsd:element>
@@ -140,6 +140,7 @@
 										<xsd:enumeration value="306"/>
 										<xsd:enumeration value="451"/>
 										<xsd:enumeration value="453"/>
+										<xsd:enumeration value="601"/>
 										<xsd:enumeration value="700"/>
 										<xsd:enumeration value="701"/>
 										<xsd:enumeration value="909"/>
@@ -178,6 +179,18 @@
 										<xsd:element name="IdDnstvbnd" type="str:IdentificatieDienstverband" minOccurs="0"/>
 										<xsd:element name="Ingdat" type="xsd:date" minOccurs="0"/>
 										<xsd:element name="PersNr" type="str:Sleutelwaarde35" minOccurs="0"/>
+										<xsd:element name="PrevDienst" minOccurs="0">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="IdPrevDienst" type="str:IdentificatieDienstverlening"/>
+													<xsd:element name="PreventDienst" type="str:PreventieveDienst"/>
+													<xsd:element name="PevDienstToev" type="str:Tekst70" minOccurs="0"/>
+													<xsd:element name="DatTotPrevD" type="xsd:date" minOccurs="0"/>
+													<xsd:element name="VerbPrevDCode" type="str:CodeKeuring" minOccurs="0"/>
+													<xsd:element name="VerbPrevDOms" type="str:Tekst70" minOccurs="0"/>
+												</xsd:sequence>
+											</xsd:complexType>
+										</xsd:element>
 										<xsd:element name="Vrzm" minOccurs="0">
 											<xsd:complexType>
 												<xsd:sequence>
@@ -260,6 +273,12 @@
 			<xsd:enumeration value="14"/>
 		</xsd:restriction>
 	</xsd:simpleType>
+	<xsd:simpleType name="CodeKeuring">
+		<xsd:restriction base="xsd:string">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="10"/>
+		</xsd:restriction>
+	</xsd:simpleType>
 	<xsd:simpleType name="Datastring">
 		<xsd:restriction base="xsd:string"/>
 	</xsd:simpleType>
@@ -290,6 +309,11 @@
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:simpleType name="IdentificatieDienstverband">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="40"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="IdentificatieDienstverlening">
 		<xsd:restriction base="xsd:string">
 			<xsd:maxLength value="40"/>
 		</xsd:restriction>
@@ -342,6 +366,33 @@
 	<xsd:simpleType name="Omschrijving70">
 		<xsd:restriction base="xsd:string">
 			<xsd:maxLength value="70"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="PreventieveDienst">
+		<xsd:restriction base="xsd:string">
+			<xsd:length value="2"/>
+			<xsd:enumeration value="01"/>
+			<xsd:enumeration value="02"/>
+			<xsd:enumeration value="03"/>
+			<xsd:enumeration value="04"/>
+			<xsd:enumeration value="05"/>
+			<xsd:enumeration value="06"/>
+			<xsd:enumeration value="07"/>
+			<xsd:enumeration value="08"/>
+			<xsd:enumeration value="09"/>
+			<xsd:enumeration value="10"/>
+			<xsd:enumeration value="11"/>
+			<xsd:enumeration value="12"/>
+			<xsd:enumeration value="13"/>
+			<xsd:enumeration value="14"/>
+			<xsd:enumeration value="15"/>
+			<xsd:enumeration value="16"/>
+			<xsd:enumeration value="17"/>
+			<xsd:enumeration value="18"/>
+			<xsd:enumeration value="50"/>
+			<xsd:enumeration value="51"/>
+			<xsd:enumeration value="52"/>
+			<xsd:enumeration value="99"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:simpleType name="Prioriteit">
@@ -397,6 +448,11 @@
 	<xsd:simpleType name="Tekst35">
 		<xsd:restriction base="xsd:string">
 			<xsd:maxLength value="35"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="Tekst70">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="70"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:simpleType name="VestigingsnummerHandelsregister">

@@ -4,7 +4,7 @@ Business chain: *Verzuim Datamodel*
 
 Transaction type: *Basistransactie Verzuim*
 
-Functional message: ***Werknemers Gegevens 2020***
+Functional message: ***Werknemers Gegevens 2021***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-1 juli 2020
+25 juni 2021
 
 Summary
 
@@ -76,7 +76,7 @@ BERICHT ALGEMEEN 1..1, R
 
 *code list:* Versienummer bericht (subset selected)
 
-00003 Versienummer 3
+00004 Versienummer 4
 
 **<u>Aanmaakdatum</u>**
 
@@ -682,7 +682,7 @@ Bron: NEN 1888: 2002 - Titel
 
 Een aanduiding voor de wijze van aanschrijving.
 
-*code list:* Naamvoorkeur (all selected)
+*code list:* Naamvoorkeur (subset selected)
 
 01 Eigen naam
 
@@ -691,8 +691,6 @@ Een aanduiding voor de wijze van aanschrijving.
 03 Naam partner gevolgd door eigen naam
 
 04 Eigen naam gevolgd door naam partner
-
-99 Onbekend
 
 **<u>Overige gegevens</u>**
 
@@ -1112,49 +1110,25 @@ desbetreffende werknemer met zijn dienstverband valt.
 
 *xml tag:* SrtDnstvbndCd
 
-Bron: ArboNed (2006)
+Bron: ArboNed (2021)
 
-*code list:* Soort dienstverband (all selected)
-
-01 Normale arbeidsovereenkomst
-
-02 Aanneming werk
-
-03 Vertegenwoordiger
+*code list:* Soort dienstverband (subset selected)
 
 04 WSW'er
 
 05 Stagiair
 
-06 Thuiswerker
-
 07 Uitzendkracht
 
-08 Musicus / artiest /beroepssporter
+20 Dienstverband onbepaalde tijd
 
-09 Persoonlijke arbeid tegen beloning
+21 Tijdelijke arbeidsovereenkomst
 
-10 Maatschapsvisser
+22 Dienstverband fictief
 
-11 Bestuurder van een cooperatieve vereniging
+23 Oproep/invalkracht
 
-Vereniging met werknemers zelfbestuur.
-
-12 Oproep / invalkracht
-
-13 Vakantiewerk
-
-14 Dienstplichtig militair
-
-15 Ambtenaar / ABP-er
-
-16 Deelvisser
-
-17 Gemoedsbezwaarde
-
-18 Topsporter
-
-19 65-plusser
+24 ZZP
 
 **Functiecode O an..15**
 
@@ -1166,57 +1140,6 @@ overeengekomen met de Arbo-dienst.
 **Naam functie O an..35**
 
 *xml tag:* NmFnct
-
-**<u>Flex & Zekerheid</u>**
-
-**Code fase indeling F&Z O an..2**
-
-*xml tag:* FsIndFZ
-
-Code die aangeeft in welke fase de inkomstenverhouding voor bepaalde
-tijd zich bevindt in het kader van de Wet flexibiliteit en zekerheid.
-
-Bron: Loonaangifte.
-
-*code list:* Code fase indeling F&Z (all selected)
-
-0 Onbekend of n.v.t.
-
-1 Fase 1 (met uitzendbeding)
-
-2 Fase 2 (met uitzendbeding)
-
-3 Fase 3
-
-4 Fase 4
-
-5 Wettelijk regime
-
-6 Ketensysteem
-
-17 Fase A met uitzendbeding
-
-18 Fase B
-
-19 Fase C
-
-38 Fase A zonder uitzendbeding, met loonuitsluiting
-
-40 Fase A zonder uitzendbeding
-
-41 Fase 1 zonder uitzendbeding
-
-42 Fase 2 zonder uitzendbeding
-
-43 Fase 1 zndr uitzendbedi met uitsl. loondrbet.vrplicht.
-
-Fase 1 zonder uitzendbeding, met uitsluiting van
-loondoorbetalingsverplichting.
-
-44 Fase 2 zndr uitzendbedi met uitsl. loondrbet.vrplicht.
-
-Fase 2 zonder uitzendbeding, met uitsluiting van
-loondoorbetalingsverplichting.
 
 **<u>Locatie</u>**
 
@@ -1249,6 +1172,13 @@ Deze naam hoort bij Onderdeel van organisatie-eenheid, code
 *xml tag:* PcStandplts
 
 Postcode van de standplaats waar de werknemer is tewerkgesteld.
+
+**Omschrijving standplaats O an..70**
+
+*xml tag:* OmsStandplts
+
+Beschrijving of verbijzondering van de plaats of locatie waar de
+werknemer is tewerkgesteld.
 
 **Verdeling, code O an..35**
 
@@ -1285,6 +1215,15 @@ week zoals opgenomen in of af te leiden uit de CAO of individuele
 arbeidsovereenkomst.
 
 Bron: Loonaangifte
+
+**Normuren per week O n..6,2**
+
+*xml tag:* AantUNormWk
+
+Norm aantal uren per week. Dit wordt bepaald door de CAO en/of
+aanvullende afspraken bij de werkgever.
+
+Bron: Uniforme Pensioenaangifte
 
 **Soort variabele werktijden, code O an2**
 

@@ -4,7 +4,7 @@ Business chain: *Verzuim Datamodel*
 
 Transaction type: *Documenten*
 
-Functional message: ***Documenten 2020***
+Functional message: ***Documenten 2021***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-1 juli 2020
+25 juni 2021
 
 Summary
 
@@ -33,6 +33,8 @@ Document 1..9999, R
 1 Werknemer 1..1, R
 
 1 Dienstverband 0..9, O
+
+2 Preventieve dienst 0..1, O
 
 2 Verzuim 0..1, O
 
@@ -62,7 +64,7 @@ BERICHT ALGEMEEN 1..1, R
 
 *code list:* Versienummer bericht (subset selected)
 
-00004 Versienummer 4
+00005 Versienummer 5
 
 **<u>Aanmaakdatum</u>**
 
@@ -452,6 +454,8 @@ DOCUMENT 1..9999, R
 
 453 Functionele mogelijkheden lijst
 
+601 Rapportage preventieve dienst
+
 700 Notitie
 
 701 Vraagstelling bedrijfsarts
@@ -716,6 +720,97 @@ inhoudingsplichtige bekend is.
 
 Bron: Loonaangifte.
 
+PREVENTIEVE DIENST 0..1, O
+
+*document - dienstverband - PREVENTIEVE DIENST*
+
+*xml tag:* PrevDienst
+
+**<u>Identificatie</u>**
+
+**Identificatie preventieve dienst R an..40**
+
+*xml tag:* IdPrevDienst
+
+**<u>Preventieve dienst</u>**
+
+**Preventieve dienst, code R an2**
+
+*xml tag:* PreventDienst
+
+*code list:* Preventieve dienst (all selected)
+
+01 Preventief spreekuur
+
+02 Preventief medisch onderzoek (PMO)
+
+03 Aanstellingskeuring
+
+04 Periodieke keuring, (o.a. PAGO)
+
+05 Chauffeurskeuring
+
+06 Rijbewijskeuring
+
+07 Binnen-/zeevaartkeuring
+
+08 Duikkeuring
+
+09 Offshorekeuring
+
+10 Ademluchtkeuring
+
+11 Asbestkeuring
+
+12 Bodemsaneringskeuring
+
+13 Stralingskeuring
+
+14 Brandweerkeuring
+
+15 Bloedonderzoek
+
+16 Vaccinatie
+
+17 Werken op hoogte
+
+18 Beroepskeuring
+
+50 Training voor leidinggevenden
+
+51 Beoordeling veiligheid in en om bedrijf
+
+52 Risico verzuimanalyses
+
+99 Overig
+
+**Preventieve dienst toevoeging O an..70**
+
+*xml tag:* PevDienstToev
+
+Aanvulling op Preventieve dienst, code
+
+**Datum uitvoering preventieve dienst O an10**
+
+*xml tag:* DatTotPrevD
+
+Uiterste datum dat de (volgende) preventieve dienst uitgevoerd moet
+worden.
+
+**Verbijzondering prev. dienst, code O an..10**
+
+*xml tag:* VerbPrevDCode
+
+Een bilateraal afgesproken code. Dit betreft een verbijzondering van de
+Code preventieve dienst.
+
+**Verbijz. prev. dienst, omschrijving O an..70**
+
+*xml tag:* VerbPrevDOms
+
+Een omschrijving van de aangevraagde keuring die overeenkomt met
+Verbijzondering prev. dienst, code.
+
 VERZUIM 0..1, O
 
 *document - dienstverband - VERZUIM*
@@ -746,6 +841,8 @@ aanvangsdatum de dag waarop men zou moeten werken na beëindiging van de
 zwangerschaps- en bevallingsuitkering. Tijdens regulier verlof wordt het
 ziekteverzuim ook meegeteld.
 
+Datum mag niet in de toekomst liggen.
+
 Bron:
 
 Berekening van ziekteverzuim
@@ -760,7 +857,7 @@ AFSPRAAK 0..1, O
 
 *document - AFSPRAAK*
 
-*xml tag:*
+*xml tag:* Afspraak
 
 **<u>Uniek kenmerk afspraak</u>**
 
@@ -814,7 +911,7 @@ UITVOERDER AFSPRAAK 0..1, O
 
 *document - afspraak - UITVOERDER AFSPRAAK*
 
-*xml tag:*
+*xml tag:* UitvoerderAfspraak
 
 **<u>Naamgegevens</u>**
 

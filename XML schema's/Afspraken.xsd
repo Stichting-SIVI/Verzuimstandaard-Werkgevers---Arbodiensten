@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:str="http://www.sivi.org/Verzuimmanagement/Afspraken/2020" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.sivi.org/Verzuimmanagement/Afspraken/2020" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2020.1">
+<xsd:schema xmlns:str="http://www.sivi.org/Verzuimmanagement/Afspraken/2021" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.sivi.org/Verzuimmanagement/Afspraken/2021" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2021.0">
 	<xsd:element name="Afspraken">
 		<xsd:complexType>
 			<xsd:sequence>
@@ -282,7 +282,7 @@
 	</xsd:simpleType>
 	<xsd:simpleType name="PostcodeNederland">
 		<xsd:restriction base="xsd:string">
-			<xsd:pattern value="[0-9]{4}[A-Z]{2}"/>
+			<xsd:length value="6"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:simpleType name="Roepnaam">

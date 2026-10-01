@@ -4,7 +4,7 @@ Business chain: *Verzuim Datamodel*
 
 Transaction type: *Afspraken*
 
-Functional message: ***Afspraken 2020***
+Functional message: ***Afspraken 2021***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-1 juli 2020
+25 juni 2021
 
 Summary
 
@@ -681,6 +681,8 @@ waarvoor men nog verzuimt na beëindiging van dat verlof, dan is de
 aanvangsdatum de dag waarop men zou moeten werken na beëindiging van de
 zwangerschaps- en bevallingsuitkering. Tijdens regulier verlof wordt het
 ziekteverzuim ook meegeteld.
+
+Datum mag niet in de toekomst liggen.
 
 Bron:
 
