@@ -4,7 +4,7 @@ Business chain: *Verzuim Datamodel 0.2*
 
 Transaction type: *Afspraken*
 
-Functional message: *Afspraken 2017*
+Functional message: ***Afspraken 2019***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-18 May 2017
+23 juni 2019
 
 Summary
 
@@ -60,7 +60,7 @@ BERICHT ALGEMEEN 1..1, R
 
 *code list:* Versienummer bericht (subset selected)
 
-00002 Versienummer 2
+00003 Versienummer 3
 
 **<u>Aanmaakdatum</u>**
 
@@ -296,11 +296,11 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 *code list:* Communicatiesoort (subset selected)
 
-01 Vaste telefoon
+06 Zakelijk e-mail adres
 
-02 Mobiele telefoon
+08 Zakelijk vaste telefoon
 
-04 E-mail adres
+10 Zakelijk mobiele telefoon
 
 **<u>Nummer</u>**
 
@@ -313,24 +313,6 @@ AFSPRAAK 1..999, R
 *AFSPRAAK*
 
 *xml tag:* Afspraak
-
-**<u>Wijze waarop de gegevens verwerkt moeten worden</u>**
-
-**Verwerking, code R an2**
-
-*xml tag:* VrwrkCd
-
-*code list:* Verwerkingscode (all selected)
-
-01 Nieuw
-
-02 Gewijzigd
-
-03 Vervallen
-
-04 Ter identificatie en/ of ter informatie
-
-05 Correctie
 
 **<u>Uniek kenmerk afspraak</u>**
 

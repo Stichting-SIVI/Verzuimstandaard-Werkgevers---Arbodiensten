@@ -4,7 +4,7 @@ Business chain: *Verzuim Datamodel 0.2*
 
 Transaction type: *Basistransactie Verzuim*
 
-Functional message: *Retourmelding 2017*
+Functional message: ***Retourmelding 1 2019***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-18 May 2017
+23 juni 2019
 
 Summary
 

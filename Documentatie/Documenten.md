@@ -4,7 +4,7 @@ Business chain: *Verzuim Datamodel 0.2*
 
 Transaction type: *Documenten*
 
-Functional message: *Documenten 2017*
+Functional message: ***Documenten 2019***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-18 May 2017
+23 juni 2019
 
 Summary
 
@@ -62,7 +62,7 @@ BERICHT ALGEMEEN 1..1, R
 
 *code list:* Versienummer bericht (subset selected)
 
-00002 Versienummer 2
+00003 Versienummer 3
 
 **<u>Aanmaakdatum</u>**
 
@@ -186,7 +186,7 @@ van andere werkgevers in de administratie van de arbodienst.
 
 **<u>Loonbelasting / loonheffingen</u>**
 
-**Loonheffingennummer R an..12**
+**Loonheffingennummer O an..12**
 
 *xml tag:* Lhnr
 
@@ -280,11 +280,11 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 *code list:* Communicatiesoort (subset selected)
 
-01 Vaste telefoon
+06 Zakelijk e-mail adres
 
-02 Mobiele telefoon
+08 Zakelijk vaste telefoon
 
-04 E-mail adres
+10 Zakelijk mobiele telefoon
 
 **<u>Nummer</u>**
 
@@ -378,11 +378,11 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 *code list:* Communicatiesoort (subset selected)
 
-01 Vaste telefoon
+06 Zakelijk e-mail adres
 
-02 Mobiele telefoon
+08 Zakelijk vaste telefoon
 
-04 E-mail adres
+10 Zakelijk mobiele telefoon
 
 **<u>Nummer</u>**
 
@@ -395,24 +395,6 @@ DOCUMENT 1..9999, R
 *DOCUMENT*
 
 *xml tag:* Document
-
-**<u>Wijze waarop de gegevens verwerkt moeten worden</u>**
-
-**Verwerking, code R an2**
-
-*xml tag:* VrwrkCd
-
-*code list:* Verwerkingscode (all selected)
-
-01 Nieuw
-
-02 Gewijzigd
-
-03 Vervallen
-
-04 Ter identificatie en/ of ter informatie
-
-05 Correctie
 
 **<u>Uniek kenmerk van het document</u>**
 
@@ -436,209 +418,47 @@ DOCUMENT 1..9999, R
 
 *xml tag:* SrtDocumentCd
 
-*code list:* Document (all selected)
+*code list:* Document (subset selected)
 
 100 Probleemanalyse
 
-101 Probleemanalyse met FML
-
-102 Probleemanalyse en advies
-
-103 Probleemanalyse ERD-ZW
-
 104 Bijstelling probleemanalyse
-
-105 Bijstelling probleemanalyse met FML
-
-106 Bijstelling probleemanalyse advies
-
-107 Bijstelling probleemanalyse ERD-ZW
-
-108 Verzoek werkgever geen probleemanalyse
-
-109 Contact werkgever ivm probleemanalyse
-
-110 Probleemanalyse met concept plan van aanpak
-
-150 Advies eindejaarevaluatie
-
-151 Advies eindevaluatie WIA aanvraag
-
-152 Advies evaluatie plan van aanpak
-
-153 Eerste jaars evaluatie
-
-154 Eerstejaarsevaluatie ERD-ZW
-
-155 Eindevaluatie
-
-156 Evaluatie plan aan aanpak
-
-157 Evaluatie plan van aanpak ERD-ZW
 
 158 Tussentijdse evaluatie
 
-159 Tussentijdse evaluatie met FML
-
-160 Tussentijdse evaluatie zonder FML
-
-200 Spreekuur arbeidsdeskundige
-
-201 Spreekuur ERD Ziektewet
-
-202 Spreekuur ERD-WGA
-
-203 Spreekuur nazorg
-
-204 Spreekuurcontact
-
-205 Telefonisch arbeidsdeskundig preventiespreekuur
-
-206 Telefonisch arbeidsdeskundig spreekuur
-
-207 Telefonisch consult gezondsheidscoördinator
-
 208 Telefonisch contact met werkgever
-
-209 Telefonisch contact met werknemer
-
-210 Telefonisch preventiespreekuur
-
-211 Telefonisch spreekuur
-
-212 Telefonisch spreekuur ERD Ziektewet
-
-213 Telefonisch spreekuur na ZW-verlof
-
-214 Telefonisch spreekuur nazorg
 
 215 Telefonische eigen verklaring werknemer
 
-216 Terugkoppeling preventie spreekuur
-
 217 Terugkoppelingsbrief spreekuur
-
-218 Preventiespreekuur
 
 219 Spreekuur oproep wijziging
 
-220 Telefonische spreekuur oproep wijziging
-
-221 Triage
-
-222 Rapportage preventiespreekuur
-
 250 Rapportage arbeidsdeskundig onderzoek
-
-251 Rapportage werkplekonderzoek
-
-252 BMW rapportage
 
 253 Reïntegratieverslag
 
-254 SMT verslag
-
-300 Advies bijstelling plan van aanpak
-
-301 Advies inzet APA
-
-302 Advies plan van aanpak
-
 303 Plan van aanpak
-
-304 WGA analyse en advies
 
 305 Advies AAG
 
 306 Advies aanvullende interventie werkgever
 
-307 Arbeidsdeskundig advies
-
-350 Actueel oordeel ERD Ziektewet
-
-351 Bijstelling plan van aanpak ERD-ZW
-
-352 Eindrapportage ERD-WGA
-
-353 Plan van aanpak ERD Ziektewet
-
-354 Werkhervattingsplan ERD-WGA
-
-400 Huisbezoek
-
-401 Huisbezoek door arbeidsdeskundige
-
-402 Huisbezoek door arts
-
-403 Huisbezoek spoed
-
-404 Huisbezoek weekend
-
-450 Actuele mogelijkheden lijst
-
 451 Inzetbaarheidsadvies
-
-452 Inzetbaarheidsprofiel
 
 453 Functionele mogelijkheden lijst
 
-500 Brief
+700 Notitie
 
-501 Brief aan behandelaar- informatieverzoek
-
-502 Verwijsbrief
-
-550 13de weeksmelding UWV
-
-551 42ste weeksmelding UWV
-
-552 Ziekmelding aan UWV
-
-553 Zwangerschapsverlofmelding UWV
-
-554 Vangnetmelding aan UWV
-
-555 Informatiebrief voor UWV - week 44 - BeZaVa
-
-556 Deelherstelmelding aan UWV
-
-557 Hersteldmelding aan UWV
-
-900 Arbeidsomstandighedencontact
-
-901 Contact werkgever ivm actueel oordeel
-
-902 Dossier toets
-
-903 Eigen verklaring retour en verwerkt
-
-904 Einde wachttijd/start WIA
-
-905 Frequent verzuimmelding
-
-906 Herinnering
-
-907 Machtiging informatieverzoek behandelaar
-
-908 Machtiging interventie
+701 Vraagstelling bedrijfsarts
 
 909 No show
 
-910 Offerte/aanvraag
-
-911 Opdrachtbevestiging
-
-912 Opstarten verzuimbegeleiding
-
-913 Sjablonen niet medisch
-
-914 Verklaring bedrijfsarts IVA
-
-915 WIA aanvraag verstuurd
-
 916 Actueel oordeel
 
-917 6-wekelijks re-integratie consult
+918 Interventieadvies
+
+919 Kennisgeving oproep
 
 999 Overig
 

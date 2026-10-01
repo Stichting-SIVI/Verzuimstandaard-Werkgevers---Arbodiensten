@@ -4,7 +4,7 @@ Business chain: *Verzuim Datamodel 0.2*
 
 Transaction type: *Basistransactie Verzuim*
 
-Functional message: *Werkgevers Gegevens Basisregistratie 2017*
+Functional message: ***Werkgevers Gegevens Basisregistratie 2019***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-18 May 2017
+23 juni 2019
 
 Summary
 
@@ -84,7 +84,7 @@ BERICHT ALGEMEEN 1..1, R
 
 *code list:* Versienummer bericht (subset selected)
 
-00006 Versienummer 6
+00007 Versienummer 7
 
 **<u>Aanmaakdatum</u>**
 
@@ -559,11 +559,11 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 *code list:* Communicatiesoort (subset selected)
 
-01 Vaste telefoon
+06 Zakelijk e-mail adres
 
-02 Mobiele telefoon
+08 Zakelijk vaste telefoon
 
-04 E-mail adres
+10 Zakelijk mobiele telefoon
 
 **<u>Nummer</u>**
 
@@ -667,6 +667,8 @@ V Vrouw
 
 04 Vervangend leidinggevende
 
+05 Algemeen contactpersoon
+
 COMMUNICATIE 1..9, R
 
 *werkgever - contactpersoon - COMMUNICATIE*
@@ -684,11 +686,11 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 *code list:* Communicatiesoort (subset selected)
 
-01 Vaste telefoon
+06 Zakelijk e-mail adres
 
-02 Mobiele telefoon
+08 Zakelijk vaste telefoon
 
-04 E-mail adres
+10 Zakelijk mobiele telefoon
 
 **<u>Nummer</u>**
 
@@ -701,8 +703,6 @@ ORGANISATIE EENHEID 0..9999, O
 *werkgever - ORGANISATIE EENHEID*
 
 *xml tag:* OrgEenh
-
-**<u>Wijze waarop de gegevens verwerkt moeten worden</u>**
 
 **Verwerking, code R an2**
 
@@ -1076,6 +1076,8 @@ V Vrouw
 
 04 Vervangend leidinggevende
 
+05 Algemeen contactpersoon
+
 COMMUNICATIE 1..9, R
 
 *werkgever - organisatie eenheid - contactpersoon - COMMUNICATIE*
@@ -1093,11 +1095,11 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 *code list:* Communicatiesoort (subset selected)
 
-01 Vaste telefoon
+06 Zakelijk e-mail adres
 
-02 Mobiele telefoon
+08 Zakelijk vaste telefoon
 
-04 E-mail adres
+10 Zakelijk mobiele telefoon
 
 **<u>Nummer</u>**
 
@@ -1110,24 +1112,6 @@ VERZEKERAAR/VOLMACHT 0..9, O
 *werkgever - organisatie eenheid - VERZEKERAAR/VOLMACHT*
 
 *xml tag:* Vrzkr
-
-**<u>Wijze waarop de gegevens verwerkt moeten worden</u>**
-
-**Verwerking, code R an2**
-
-*xml tag:* VrwrkCd
-
-*code list:* Verwerkingscode (all selected)
-
-01 Nieuw
-
-02 Gewijzigd
-
-03 Vervallen
-
-04 Ter identificatie en/ of ter informatie
-
-05 Correctie
 
 **<u>Handelsnaam</u>**
 
@@ -1200,24 +1184,6 @@ KOSTENPLAATS 0..9999, O
 *werkgever - KOSTENPLAATS*
 
 *xml tag:* Kostenplaats
-
-**<u>Wijze waarop de gegevens verwerkt moeten worden</u>**
-
-**Verwerking, code R an2**
-
-*xml tag:* VrwrkCd
-
-*code list:* Verwerkingscode (all selected)
-
-01 Nieuw
-
-02 Gewijzigd
-
-03 Vervallen
-
-04 Ter identificatie en/ of ter informatie
-
-05 Correctie
 
 **<u>Periode geldig</u>**
 
@@ -1311,24 +1277,6 @@ VERZEKERAAR/VOLMACHT 0..9, O
 *werkgever - VERZEKERAAR/VOLMACHT*
 
 *xml tag:* Vrzkr
-
-**<u>Wijze waarop de gegevens verwerkt moeten worden</u>**
-
-**Verwerking, code R an2**
-
-*xml tag:* VrwrkCd
-
-*code list:* Verwerkingscode (all selected)
-
-01 Nieuw
-
-02 Gewijzigd
-
-03 Vervallen
-
-04 Ter identificatie en/ of ter informatie
-
-05 Correctie
 
 **<u>Handelsnaam</u>**
 

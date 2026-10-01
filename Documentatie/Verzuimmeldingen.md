@@ -4,7 +4,7 @@ Business chain: *Verzuim Datamodel 0.2*
 
 Transaction type: *Basistransactie Verzuim*
 
-Functional message: *Verzuimmeldingen 2017*
+Functional message: ***Verzuimmeldingen 2019***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-18 May 2017
+23 juni 2019
 
 Summary
 
@@ -86,7 +86,7 @@ BERICHT ALGEMEEN 1..1, R
 
 *code list:* Versienummer bericht (subset selected)
 
-00006 Versienummer 6
+00007 Versienummer 7
 
 **<u>Aanmaakdatum</u>**
 
@@ -255,7 +255,7 @@ administratie van het UWV.
 
 **<u>Loonbelasting / loonheffingen</u>**
 
-**Loonheffingennummer R an..12**
+**Loonheffingennummer O an..12**
 
 *xml tag:* Lhnr
 
@@ -444,11 +444,11 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 *code list:* Communicatiesoort (subset selected)
 
-01 Vaste telefoon
+06 Zakelijk e-mail adres
 
-02 Mobiele telefoon
+08 Zakelijk vaste telefoon
 
-04 E-mail adres
+10 Zakelijk mobiele telefoon
 
 **<u>Nummer</u>**
 
@@ -552,6 +552,8 @@ V Vrouw
 
 04 Vervangend leidinggevende
 
+05 Algemeen contactpersoon
+
 COMMUNICATIE 1..9, R
 
 *werkgever - contactpersoon - COMMUNICATIE*
@@ -569,11 +571,11 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 *code list:* Communicatiesoort (subset selected)
 
-01 Vaste telefoon
+06 Zakelijk e-mail adres
 
-02 Mobiele telefoon
+08 Zakelijk vaste telefoon
 
-04 E-mail adres
+10 Zakelijk mobiele telefoon
 
 **<u>Nummer</u>**
 
@@ -591,22 +593,6 @@ Een werknemer is de natuurlijke persoon met wie een inkomstenverhouding
 binnen de loonadministratie bestaat.
 
 **<u>Wijze waarop de gegevens verwerkt moeten worden</u>**
-
-**Verwerking, code R an2**
-
-*xml tag:* VrwrkCd
-
-*code list:* Verwerkingscode (all selected)
-
-01 Nieuw
-
-02 Gewijzigd
-
-03 Vervallen
-
-04 Ter identificatie en/ of ter informatie
-
-05 Correctie
 
 **Ingangsdatum mutatie O an10**
 
@@ -816,24 +802,6 @@ PARTNER 0..1, O
 *werkgever - werknemer - PARTNER*
 
 *xml tag:* Prtnr
-
-**<u>Wijze waarop de gegevens verwerkt moeten worden</u>**
-
-**Verwerking, code R an2**
-
-*xml tag:* VrwrkCd
-
-*code list:* Verwerkingscode (all selected)
-
-01 Nieuw
-
-02 Gewijzigd
-
-03 Vervallen
-
-04 Ter identificatie en/ of ter informatie
-
-05 Correctie
 
 **<u>Naamgegevens</u>**
 
@@ -1105,13 +1073,11 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 *code list:* Communicatiesoort (subset selected)
 
-01 Vaste telefoon
-
-02 Mobiele telefoon
-
-04 E-mail adres
-
 05 Privé e-mail adres
+
+07 Privé vaste telefoon
+
+09 Privé mobiele telefoon
 
 **<u>Nummer</u>**
 
@@ -1126,22 +1092,6 @@ DIENSTVERBAND 1..99, R
 *xml tag:* Dnstvbnd
 
 **<u>Wijze waarop de gegevens verwerkt moeten worden</u>**
-
-**Verwerking, code R an2**
-
-*xml tag:* VrwrkCd
-
-*code list:* Verwerkingscode (all selected)
-
-01 Nieuw
-
-02 Gewijzigd
-
-03 Vervallen
-
-04 Ter identificatie en/ of ter informatie
-
-05 Correctie
 
 **Ingangsdatum mutatie O an10**
 
@@ -1282,7 +1232,7 @@ overeengekomen met de Arbo-dienst.
 
 **<u>Flex & Zekerheid</u>**
 
-**Code fase indeling F&Z O n..2**
+**Code fase indeling F&Z O an..2**
 
 *xml tag:* FsIndFZ
 
@@ -1472,24 +1422,6 @@ na afsluiting van een arbeidsovereenkomst.
 
 Dit wordt ook wel aanstelling genoemd.
 
-**<u>Wijze waarop de gegevens verwerkt moeten worden</u>**
-
-**Verwerking, code R an2**
-
-*xml tag:* VrwrkCd
-
-*code list:* Verwerkingscode (all selected)
-
-01 Nieuw
-
-02 Gewijzigd
-
-03 Vervallen
-
-04 Ter identificatie en/ of ter informatie
-
-05 Correctie
-
 **<u>Identificerende gegevens arbeidsrelatie</u>**
 
 **Identificatie arbeidsrelatie R an..40**
@@ -1541,24 +1473,6 @@ KOSTENPLAATS 0..9, O
 *werkgever - werknemer - dienstverband - KOSTENPLAATS*
 
 *xml tag:* Kostenplaats
-
-**<u>Wijze waarop de gegevens verwerkt moeten worden</u>**
-
-**Verwerking, code R an2**
-
-*xml tag:* VrwrkCd
-
-*code list:* Verwerkingscode (all selected)
-
-01 Nieuw
-
-02 Gewijzigd
-
-03 Vervallen
-
-04 Ter identificatie en/ of ter informatie
-
-05 Correctie
 
 **<u>Periode geldig</u>**
 
@@ -1755,6 +1669,8 @@ werkgever.
 
 03 Ziek uit dienst
 
+04 Uit WAZO
+
 **Oorzaak verzuim, code R an2**
 
 *xml tag:* OorzkVrzmCd
@@ -1785,34 +1701,17 @@ November 2004
 
 99 Overige redenen
 
-**Vangnet, code R an2**
+**Vangnetgeval J/N R a1**
 
-*xml tag:* VngntCd
+*xml tag:* VngntJN
 
-Bron: Arbo Unie
+*code list:* Logische eenheid (all selected)
 
-*code list:* Vangnet (subset selected)
+J Ja
 
-00 Geen vangnetgeval
+N Nee
 
-02 Verzuim a.g.v. van zwangerschap en/of bevalling
-
-03 Verzuim a.g.v. van orgaandonatie
-
-04 WW uitkering en meer dan xx weken verzuim
-
-05 Uitzendkracht of oproepkracht
-
-06 Beëindiging dienstverband tijdens verzuim
-
-07 Gedeeltelijk ao /verzuim binnen x jr na begin dnstverb.
-
-Gedeeltelijk arbeidsongeschikt en verzuim binnen xx jaar na begin
-dienstverband
-
-08 Bijzonder dienstverband
-
-99 Overige oorzaken
+O Onbekend
 
 **Reden einde verzuim, code O an2**
 
@@ -1973,6 +1872,8 @@ V Vrouw
 
 04 Vervangend leidinggevende
 
+05 Algemeen contactpersoon
+
 COMMUNICATIE 1..9, R
 
 *werkgever - werknemer - dienstverband - verzuim - contactpersoon -
@@ -1991,11 +1892,11 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 *code list:* Communicatiesoort (subset selected)
 
-01 Vaste telefoon
+06 Zakelijk e-mail adres
 
-02 Mobiele telefoon
+08 Zakelijk vaste telefoon
 
-04 E-mail adres
+10 Zakelijk mobiele telefoon
 
 **<u>Nummer</u>**
 
@@ -2030,29 +1931,9 @@ door de Arbo-dienst.
 
 05 Actie in overleg
 
-06 Uitnodigen spreekuur binnen 24 uur
-
-07 Overleg BA
-
 08 Geen actie
 
-09 Geen huisbezoek
-
-10 Huisbezoek 1ste dag
-
-11 Huisbezoek dag 2/3
-
-12 Schriftelijke enquete
-
 13 Telefonische enquete
-
-14 Spreekuuroproep
-
-15 Administratieve controle
-
-16 Controle op het werk
-
-17 Avond / weekend controle
 
 VRIJE TEKST 0..99, O
 
@@ -2164,6 +2045,8 @@ V Vrouw
 
 04 Vervangend leidinggevende
 
+05 Algemeen contactpersoon
+
 COMMUNICATIE 1..9, R
 
 *werkgever - werknemer - dienstverband - contactpersoon - COMMUNICATIE*
@@ -2181,11 +2064,11 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 *code list:* Communicatiesoort (subset selected)
 
-01 Vaste telefoon
+06 Zakelijk e-mail adres
 
-02 Mobiele telefoon
+08 Zakelijk vaste telefoon
 
-04 E-mail adres
+10 Zakelijk mobiele telefoon
 
 **<u>Nummer</u>**
 

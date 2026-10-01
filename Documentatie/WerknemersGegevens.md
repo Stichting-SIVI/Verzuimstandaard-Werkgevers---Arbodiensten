@@ -4,7 +4,7 @@ Business chain: *Verzuim Datamodel 0.2*
 
 Transaction type: *Basistransactie Verzuim*
 
-Functional message: *Werknemers Gegevens 2017*
+Functional message: ***Werknemers Gegevens 2019***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,7 +12,7 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-18 May 2017
+23 juni 2019
 
 Summary
 
@@ -76,7 +76,7 @@ BERICHT ALGEMEEN 1..1, R
 
 *code list:* Versienummer bericht (subset selected)
 
-00001 Versienummer 1
+00002 Versienummer 2
 
 **<u>Aanmaakdatum</u>**
 
@@ -406,11 +406,11 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 *code list:* Communicatiesoort (subset selected)
 
-01 Vaste telefoon
+06 Zakelijk e-mail adres
 
-02 Mobiele telefoon
+08 Zakelijk vaste telefoon
 
-04 E-mail adres
+10 Zakelijk mobiele telefoon
 
 **<u>Nummer</u>**
 
@@ -514,6 +514,8 @@ V Vrouw
 
 04 Vervangend leidinggevende
 
+05 Algemeen contactpersoon
+
 COMMUNICATIE 1..9, R
 
 *werkgever - contactpersoon - COMMUNICATIE*
@@ -531,11 +533,11 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 *code list:* Communicatiesoort (subset selected)
 
-01 Vaste telefoon
+06 Zakelijk e-mail adres
 
-02 Mobiele telefoon
+08 Zakelijk vaste telefoon
 
-04 E-mail adres
+10 Zakelijk mobiele telefoon
 
 **<u>Nummer</u>**
 
@@ -553,22 +555,6 @@ Een werknemer is de natuurlijke persoon met wie een inkomstenverhouding
 binnen de loonadministratie bestaat.
 
 **<u>Wijze waarop de gegevens verwerkt moeten worden</u>**
-
-**Verwerking, code R an2**
-
-*xml tag:* VrwrkCd
-
-*code list:* Verwerkingscode (all selected)
-
-01 Nieuw
-
-02 Gewijzigd
-
-03 Vervallen
-
-04 Ter identificatie en/ of ter informatie
-
-05 Correctie
 
 **Ingangsdatum mutatie O an10**
 
@@ -780,24 +766,6 @@ PARTNER 0..1, O
 *werkgever - werknemer - PARTNER*
 
 *xml tag:* Prtnr
-
-**<u>Wijze waarop de gegevens verwerkt moeten worden</u>**
-
-**Verwerking, code R an2**
-
-*xml tag:* VrwrkCd
-
-*code list:* Verwerkingscode (all selected)
-
-01 Nieuw
-
-02 Gewijzigd
-
-03 Vervallen
-
-04 Ter identificatie en/ of ter informatie
-
-05 Correctie
 
 **<u>Naamgegevens</u>**
 
@@ -1025,13 +993,17 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 *code list:* Communicatiesoort (subset selected)
 
-01 Vaste telefoon
-
-02 Mobiele telefoon
-
-04 E-mail adres
-
 05 Privé e-mail adres
+
+06 Zakelijk e-mail adres
+
+07 Privé vaste telefoon
+
+08 Zakelijk vaste telefoon
+
+09 Privé mobiele telefoon
+
+10 Zakelijk mobiele telefoon
 
 **<u>Nummer</u>**
 
@@ -1046,22 +1018,6 @@ DIENSTVERBAND 1..99, R
 *xml tag:* Dnstvbnd
 
 **<u>Wijze waarop de gegevens verwerkt moeten worden</u>**
-
-**Verwerking, code R an2**
-
-*xml tag:* VrwrkCd
-
-*code list:* Verwerkingscode (all selected)
-
-01 Nieuw
-
-02 Gewijzigd
-
-03 Vervallen
-
-04 Ter identificatie en/ of ter informatie
-
-05 Correctie
 
 **Ingangsdatum mutatie O an10**
 
@@ -1202,7 +1158,7 @@ overeengekomen met de Arbo-dienst.
 
 **<u>Flex & Zekerheid</u>**
 
-**Code fase indeling F&Z O n..2**
+**Code fase indeling F&Z O an..2**
 
 *xml tag:* FsIndFZ
 
@@ -1392,24 +1348,6 @@ na afsluiting van een arbeidsovereenkomst.
 
 Dit wordt ook wel aanstelling genoemd.
 
-**<u>Wijze waarop de gegevens verwerkt moeten worden</u>**
-
-**Verwerking, code R an2**
-
-*xml tag:* VrwrkCd
-
-*code list:* Verwerkingscode (all selected)
-
-01 Nieuw
-
-02 Gewijzigd
-
-03 Vervallen
-
-04 Ter identificatie en/ of ter informatie
-
-05 Correctie
-
 **<u>Identificerende gegevens arbeidsrelatie</u>**
 
 **Identificatie arbeidsrelatie R an..40**
@@ -1461,24 +1399,6 @@ KOSTENPLAATS 0..9, O
 *werkgever - werknemer - dienstverband - KOSTENPLAATS*
 
 *xml tag:* Kostenplaats
-
-**<u>Wijze waarop de gegevens verwerkt moeten worden</u>**
-
-**Verwerking, code R an2**
-
-*xml tag:* VrwrkCd
-
-*code list:* Verwerkingscode (all selected)
-
-01 Nieuw
-
-02 Gewijzigd
-
-03 Vervallen
-
-04 Ter identificatie en/ of ter informatie
-
-05 Correctie
 
 **<u>Periode geldig</u>**
 
@@ -1610,6 +1530,8 @@ V Vrouw
 
 04 Vervangend leidinggevende
 
+05 Algemeen contactpersoon
+
 COMMUNICATIE 1..9, R
 
 *werkgever - werknemer - dienstverband - contactpersoon - COMMUNICATIE*
@@ -1627,11 +1549,11 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 *code list:* Communicatiesoort (subset selected)
 
-01 Vaste telefoon
+06 Zakelijk e-mail adres
 
-02 Mobiele telefoon
+08 Zakelijk vaste telefoon
 
-04 E-mail adres
+10 Zakelijk mobiele telefoon
 
 **<u>Nummer</u>**
 
