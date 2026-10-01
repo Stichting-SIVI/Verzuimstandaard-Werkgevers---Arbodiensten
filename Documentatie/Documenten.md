@@ -4,7 +4,7 @@ Business chain: *Verzuim Datamodel*
 
 Transaction type: *Documenten*
 
-Functional message: ***Documenten 2022***
+Functional message: ***Documenten 2024***
 
 Actor group: *Verzuimstandaard Werkgever - Arbodienst*
 
@@ -12,37 +12,37 @@ XML Tag Set: *Standard XML*
 
 **Copyright SIVI**
 
-1 juli 2022
+9 juli 2024
 
 Summary
 
-Bericht algemeen 1..1, R
+Bericht algemeen 1..1, V
 
-Werkgever 0..1, O
+Werkgever 0..1, F
 
-Contactpersoon ontvanger 0..1, O
+Contactpersoon ontvanger 0..1, F
 
-1 Communicatie 0..9, O
+1 Communicatie 0..9, F
 
-Contactpersoon zender 0..1, O
+Contactpersoon zender 0..1, F
 
-1 Communicatie 0..9, O
+1 Communicatie 0..9, F
 
-Document 1..9999, R
+Document 1..9999, V
 
-1 Werknemer 1..1, R
+1 Werknemer 1..1, V
 
-1 Dienstverband 0..9, O
+1 Dienstverband 0..9, F
 
-2 Preventieve dienst 0..1, O
+2 Preventieve dienst 0..1, F
 
-2 Verzuim 0..1, O
+2 Verzuim 0..1, F
 
-1 Afspraak 0..1, O
+1 Afspraak 0..1, F
 
-2 Uitvoerder afspraak 0..1, O
+2 Uitvoerder afspraak 0..1, F
 
-BERICHT ALGEMEEN 1..1, R
+BERICHT ALGEMEEN 1..1, V
 
 *BERICHT ALGEMEEN*
 
@@ -50,7 +50,7 @@ BERICHT ALGEMEEN 1..1, R
 
 **<u>Soort bericht + versienummer</u>**
 
-**Bericht, code R an..5**
+**Bericht, code V an..5**
 
 *xml tag:* BrCd
 
@@ -58,7 +58,7 @@ BERICHT ALGEMEEN 1..1, R
 
 00500 Documenten
 
-**Versienummer bericht, code R an..5**
+**Versienummer bericht, code V an..5**
 
 *xml tag:* VnrBrCd
 
@@ -68,19 +68,19 @@ BERICHT ALGEMEEN 1..1, R
 
 **<u>Aanmaakdatum</u>**
 
-**Aanmaakdatum bericht R an10**
+**Aanmaakdatum bericht V an10**
 
 *xml tag:* AandatBr
 
 **<u>Aanmaaktijd</u>**
 
-**Aanmaaktijd bericht R an8**
+**Aanmaaktijd bericht V an8**
 
 *xml tag:* AantijdBr
 
 **<u>Inzender</u>**
 
-**Identificatie inzender R an..40**
+**Identificatie inzender V an..40**
 
 *xml tag:* IdInzndr
 
@@ -88,7 +88,7 @@ Bilateraal afgesproken codering betreffende de inzender van het bericht.
 
 **<u>Ontvanger</u>**
 
-**Identificatie ontvanger R an..40**
+**Identificatie ontvanger V an..40**
 
 *xml tag:* IdOntvngr
 
@@ -97,13 +97,13 @@ Bilateraal afgesproken codering betreffende de ontvanger
 
 **<u>Berichtreferentie</u>**
 
-**Berichtreferentienummer R an..512**
+**Berichtreferentienummer V an..512**
 
 *xml tag:* Berrefnr
 
 **<u>Testindicatie</u>**
 
-**Test J/N R a1**
+**Test J/N V a1**
 
 *xml tag:* TestJN
 
@@ -117,7 +117,7 @@ N Nee
 
 **<u>Ontvangstbevestiging</u>**
 
-**Ontvangstbevestiging gewenst J/N R a1**
+**Ontvangstbevestiging gewenst J/N V a1**
 
 *xml tag:* OntvngstbevJN
 
@@ -129,7 +129,7 @@ J Ja
 
 N Nee
 
-WERKGEVER 0..1, O
+WERKGEVER 0..1, F
 
 *WERKGEVER*
 
@@ -140,7 +140,7 @@ aantal gevallen de term Inhoudingsplichtige gebruikt.
 
 **<u>Handelsnaam</u>**
 
-**Handelsnaam organisatie R an..100**
+**Handelsnaam organisatie V an..100**
 
 *xml tag:* HndlsnmOrg
 
@@ -151,7 +151,7 @@ Norminstantie: SUWI
 
 **<u>Kamer van Koophandel</u>**
 
-**Inschrijvingsnummer Kamer van Koophandel O n..8**
+**Inschrijvingsnummer Kamer van Koophandel F n..8**
 
 *xml tag:* InschrijvingsnrKvK
 
@@ -160,7 +160,7 @@ ondernemingen zoals vermeld in de Handelsregisterwet.
 
 Bron: SUWI Gegevens Register
 
-**Vestigingsnummer O n..12**
+**Vestigingsnummer F n..12**
 
 *xml tag:* VestigingsnrHandelsregister
 
@@ -168,9 +168,9 @@ Een identificerend nummer voor een vestiging in het Handelsregister.
 
 Norminstantie: Handelsregister
 
-**<u>Identificatie bij de Arbo-dienst</u>**
+**<u>Identificatie bij de arbodienst</u>**
 
-**Identificatie werkgever bij Arbo-dienst R an..40**
+**Identificatie werkgever bij arbodienst V an..40**
 
 *xml tag:* IdWrkgvrArbdnst
 
@@ -178,7 +178,7 @@ De identificatiecode die de arbodienst heeft aangeleverd aan de
 werkgever waardoor de werkgever wordt onderscheden van andere werkgevers
 in de administratie van de arbodienst.
 
-**Aansluitnummer gegevensuitwisseling Arbodienst R an..70**
+**Aansluitnummer gegevensuitwisseling Arbodienst V an..70**
 
 *xml tag:* AansltnrGeguitwlngArbdnst
 
@@ -188,7 +188,7 @@ van andere werkgevers in de administratie van de arbodienst.
 
 **<u>Loonbelasting / loonheffingen</u>**
 
-**Loonheffingennummer O an..12**
+**Loonheffingennummer F an..12**
 
 *xml tag:* Lhnr
 
@@ -196,7 +196,7 @@ Een door de Belastingdienst toegekende identificatie voor de
 administratieve eenheid waaronder de werkgever bekend is en
 loonheffingen afdraagt.
 
-CONTACTPERSOON ONTVANGER 0..1, O
+CONTACTPERSOON ONTVANGER 0..1, F
 
 *CONTACTPERSOON ONTVANGER*
 
@@ -204,7 +204,7 @@ CONTACTPERSOON ONTVANGER 0..1, O
 
 **<u>Naamgegevens</u>**
 
-**Achternaam/Achternamen R an..200**
+**Achternaam/Achternamen V an..200**
 
 *xml tag:* Achternaam
 
@@ -230,7 +230,7 @@ van de volgende namen:
 
 Bron: Genootschap Onze Taal
 
-**Voorletters O a..6**
+**Voorletters F a..6**
 
 *xml tag:* Voorl
 
@@ -242,7 +242,7 @@ Alleen alfabetische tekens zijn toegestaan.
 
 Bron: Loonaangifte.
 
-**Roepnaam O a..35**
+**Roepnaam F a..35**
 
 *xml tag:* Roepnaam
 
@@ -250,7 +250,7 @@ Voornaam waarmee iemand wordt aangesproken.
 
 **<u>Overige gegevens</u>**
 
-**Geslachtsaanduiding, code O an1**
+**Geslachtsaanduiding, code F an1**
 
 *xml tag:* GslchtCd
 
@@ -267,7 +267,7 @@ O Onbekend/niet gespecificeerd
 
 V Vrouw
 
-COMMUNICATIE 0..9, O
+COMMUNICATIE 0..9, F
 
 *contactpersoon ontvanger - COMMUNICATIE*
 
@@ -278,7 +278,7 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 **<u>Soort communicatie</u>**
 
-**Soort communicatie, code R an2**
+**Soort communicatie, code V an2**
 
 *xml tag:* SrtComCd
 
@@ -292,11 +292,11 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 **<u>Nummer</u>**
 
-**Nummer/adres communicatie R an..512**
+**Nummer/adres communicatie V an..512**
 
 *xml tag:* NrCom
 
-CONTACTPERSOON ZENDER 0..1, O
+CONTACTPERSOON ZENDER 0..1, F
 
 *CONTACTPERSOON ZENDER*
 
@@ -304,7 +304,7 @@ CONTACTPERSOON ZENDER 0..1, O
 
 **<u>Naamgegevens</u>**
 
-**Achternaam/Achternamen R an..200**
+**Achternaam/Achternamen V an..200**
 
 *xml tag:* Achternaam
 
@@ -330,7 +330,7 @@ van de volgende namen:
 
 Bron: Genootschap Onze Taal
 
-**Voorletters O a..6**
+**Voorletters F a..6**
 
 *xml tag:* Voorl
 
@@ -342,7 +342,7 @@ Alleen alfabetische tekens zijn toegestaan.
 
 Bron: Loonaangifte.
 
-**Roepnaam O a..35**
+**Roepnaam F a..35**
 
 *xml tag:* Roepnaam
 
@@ -350,7 +350,7 @@ Voornaam waarmee iemand wordt aangesproken.
 
 **<u>Overige gegevens</u>**
 
-**Geslachtsaanduiding, code O an1**
+**Geslachtsaanduiding, code F an1**
 
 *xml tag:* GslchtCd
 
@@ -367,7 +367,7 @@ O Onbekend/niet gespecificeerd
 
 V Vrouw
 
-COMMUNICATIE 0..9, O
+COMMUNICATIE 0..9, F
 
 *contactpersoon zender - COMMUNICATIE*
 
@@ -378,7 +378,7 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 **<u>Soort communicatie</u>**
 
-**Soort communicatie, code R an2**
+**Soort communicatie, code V an2**
 
 *xml tag:* SrtComCd
 
@@ -392,11 +392,11 @@ maakt met hulpmiddelen met elkaar te communiceren.
 
 **<u>Nummer</u>**
 
-**Nummer/adres communicatie R an..512**
+**Nummer/adres communicatie V an..512**
 
 *xml tag:* NrCom
 
-DOCUMENT 1..9999, R
+DOCUMENT 1..9999, V
 
 *DOCUMENT*
 
@@ -404,23 +404,23 @@ DOCUMENT 1..9999, R
 
 **<u>Uniek kenmerk van het document</u>**
 
-**Identificatie document R an..40**
+**Identificatie document V an..40**
 
 *xml tag:* IdDocument
 
-**Identificatie document oud O an..40**
+**Identificatie document oud F an..40**
 
 *xml tag:* IdDocumentOud
 
 **<u>Datum dat het document is aangemaakt</u>**
 
-**Datum document R an10**
+**Datum document V an10**
 
 *xml tag:* DatDocument
 
 **<u>Kenmerken document</u>**
 
-**Soort document, code R an3**
+**Soort document, code V an3**
 
 *xml tag:* SrtDocumentCd
 
@@ -472,13 +472,13 @@ DOCUMENT 1..9999, R
 
 999 Overig
 
-**Soort document, omschrijving O an..70**
+**Soort document, omschrijving F an..70**
 
 *xml tag:* SrtDocumentOms
 
 Verplicht indien Soort document, code = 999
 
-**Status document, code O an2**
+**Status document, code F an2**
 
 *xml tag:* StatDocumentCd
 
@@ -488,13 +488,13 @@ Verplicht indien Soort document, code = 999
 
 02 Concept
 
-**Kenmerk zendende partij R an..512**
+**Kenmerk zendende partij V an..512**
 
 *xml tag:* KenmerkZendPartij
 
 Een typerend kenmerk dat de zendende partij aan het document toekent.
 
-**Reden aanlevering document, code O an2**
+**Reden aanlevering document, code F an2**
 
 *xml tag:* RdAanlevDocumentCd
 
@@ -506,7 +506,7 @@ Een typerend kenmerk dat de zendende partij aan het document toekent.
 
 03 Archivering
 
-**Prioriteit, code O an2**
+**Prioriteit, code F an2**
 
 *xml tag:* PrioriteitCd
 
@@ -518,7 +518,7 @@ Een typerend kenmerk dat de zendende partij aan het document toekent.
 
 03 Laag
 
-**Bestand type, code O an2**
+**Bestand type, code F an2**
 
 *xml tag:* BestandTypCd
 
@@ -552,11 +552,11 @@ Een typerend kenmerk dat de zendende partij aan het document toekent.
 
 14 JPEG
 
-**Bestandsnaam O an..70**
+**Bestandsnaam F an..70**
 
 *xml tag:* Bestandsnm
 
-**Adressering, code O an2**
+**Adressering, code F an2**
 
 *xml tag:* AdresseringCd
 
@@ -570,13 +570,13 @@ Een typerend kenmerk dat de zendende partij aan het document toekent.
 
 **<u>Het document</u>**
 
-**Datastring R an..\***
+**Datastring V an..\***
 
 *xml tag:* Datastring
 
 Datastring bevat het document.
 
-WERKNEMER 1..1, R
+WERKNEMER 1..1, V
 
 *document - WERKNEMER*
 
@@ -587,7 +587,7 @@ binnen de loonadministratie bestaat.
 
 **<u>Identificerende gegevens</u>**
 
-**Burgerservicenummer O n..9**
+**Burgerservicenummer F n..9**
 
 *xml tag:* SofiNr
 
@@ -599,7 +599,7 @@ BSN dan moet in ieder geval het Personeelsnummer doorgegeven worden.
 
 Bron: Loonaangifte.
 
-**Geboortedatum O an10**
+**Geboortedatum F an10**
 
 *xml tag:* Gebdat
 
@@ -619,7 +619,7 @@ Bron: Loonaangifte.
 
 **<u>Naamgegevens</u>**
 
-**Achternaam/Achternamen O an..200**
+**Achternaam/Achternamen F an..200**
 
 *xml tag:* Achternaam
 
@@ -645,7 +645,7 @@ van de volgende namen:
 
 Bron: Genootschap Onze Taal
 
-**Voorletters O a..6**
+**Voorletters F a..6**
 
 *xml tag:* Voorl
 
@@ -657,7 +657,7 @@ Alleen alfabetische tekens zijn toegestaan.
 
 Bron: Loonaangifte.
 
-**Roepnaam O a..35**
+**Roepnaam F a..35**
 
 *xml tag:* Roepnaam
 
@@ -665,7 +665,7 @@ Voornaam waarmee iemand wordt aangesproken.
 
 **<u>Overige gegevens</u>**
 
-**Geslachtsaanduiding, code O an1**
+**Geslachtsaanduiding, code F an1**
 
 *xml tag:* GslchtCd
 
@@ -684,14 +684,14 @@ V Vrouw
 
 **<u>Identificatie</u>**
 
-**Identificatie werknemer R an..40**
+**Identificatie werknemer V an..40**
 
 *xml tag:* IdWrknmr
 
 Een unieke identificatie van de werknemer bij de werkgever. Een eenmaal
 uitgegeven identificatie wordt niet hergebruikt.
 
-DIENSTVERBAND 0..9, O
+DIENSTVERBAND 0..9, F
 
 *document - DIENSTVERBAND*
 
@@ -699,7 +699,7 @@ DIENSTVERBAND 0..9, O
 
 **<u>Identificatie</u>**
 
-**Identificatie dienstverband O an..40**
+**Identificatie dienstverband F an..40**
 
 *xml tag:* IdDnstvbnd
 
@@ -707,13 +707,13 @@ Unieke code voor het dienstverband van de werknemer.
 
 **<u>Datums</u>**
 
-**Ingangsdatum O an10**
+**Ingangsdatum F an10**
 
 *xml tag:* Ingdat
 
 **<u>Personeelsnummer behorende bij het dienstverband</u>**
 
-**Personeelsnummer O an..35**
+**Personeelsnummer F an..35**
 
 *xml tag:* PersNr
 
@@ -722,7 +722,7 @@ inhoudingsplichtige bekend is.
 
 Bron: Loonaangifte.
 
-PREVENTIEVE DIENST 0..1, O
+PREVENTIEVE DIENST 0..1, F
 
 *document - dienstverband - PREVENTIEVE DIENST*
 
@@ -730,13 +730,13 @@ PREVENTIEVE DIENST 0..1, O
 
 **<u>Identificatie</u>**
 
-**Identificatie preventieve dienst R an..40**
+**Identificatie preventieve dienst V an..40**
 
 *xml tag:* IdPrevDienst
 
 **<u>Preventieve dienst</u>**
 
-**Preventieve dienst, code R an2**
+**Preventieve dienst, code V an2**
 
 *xml tag:* PreventDienst
 
@@ -786,34 +786,34 @@ PREVENTIEVE DIENST 0..1, O
 
 99 Overig
 
-**Preventieve dienst toevoeging O an..70**
+**Preventieve dienst toevoeging F an..70**
 
 *xml tag:* PevDienstToev
 
 Aanvulling op Preventieve dienst, code
 
-**Datum uitvoering preventieve dienst O an10**
+**Datum uitvoering preventieve dienst F an10**
 
 *xml tag:* DatTotPrevD
 
 Uiterste datum dat de (volgende) preventieve dienst uitgevoerd moet
 worden.
 
-**Verbijzondering prev. dienst, code O an..10**
+**Verbijzondering prev. dienst, code F an..10**
 
 *xml tag:* VerbPrevDCode
 
 Een bilateraal afgesproken code. Dit betreft een verbijzondering van de
 Code preventieve dienst.
 
-**Verbijz. prev. dienst, omschrijving O an..70**
+**Verbijz. prev. dienst, omschrijving F an..70**
 
 *xml tag:* VerbPrevDOms
 
 Een omschrijving van de aangevraagde keuring die overeenkomt met
 Verbijzondering prev. dienst, code.
 
-VERZUIM 0..1, O
+VERZUIM 0..1, F
 
 *document - dienstverband - VERZUIM*
 
@@ -821,7 +821,7 @@ VERZUIM 0..1, O
 
 **<u>Identificatie</u>**
 
-**Verzuimgeval identificatie O an..40**
+**Verzuimgeval identificatie F an..40**
 
 *xml tag:* VrzmgvlId
 
@@ -833,7 +833,7 @@ Uniek per werkgever ook in de tijd.
 
 **<u>Data</u>**
 
-**Datum eerste verzuimdag R an10**
+**Datum eerste verzuimdag V an10**
 
 *xml tag:* DatEerstVrzmdg
 
@@ -857,7 +857,7 @@ Nationale Verzuimstatistiek
 
 November 2004
 
-AFSPRAAK 0..1, O
+AFSPRAAK 0..1, F
 
 *document - AFSPRAAK*
 
@@ -865,17 +865,17 @@ AFSPRAAK 0..1, O
 
 **<u>Uniek kenmerk afspraak</u>**
 
-**Identificatie afspraak O an..40**
+**Identificatie afspraak F an..40**
 
 *xml tag:* IdAfspraak
 
 Unieke identificatie van de afspraak bij de zender.
 
-**Datum afspraak R an10**
+**Datum afspraak V an10**
 
 *xml tag:* DatAfspraak
 
-**Tijdstip afspraak O an8**
+**Tijdstip afspraak F an8**
 
 *xml tag:* TijdAfspraak
 
@@ -883,13 +883,13 @@ Begintijd van de afspraak
 
 **<u>Overige gegevens</u>**
 
-**Duur afspraak O n..5,2**
+**Duur afspraak F n..5,2**
 
 *xml tag:* DuurAfspraak
 
 Duur van de afspraak in uren.
 
-**Status afspraak, code O an2**
+**Status afspraak, code F an2**
 
 *xml tag:* StatusAfspraakCd
 
@@ -907,11 +907,11 @@ Duur van de afspraak in uren.
 
 06 No show
 
-**Omschrijving soort afspraak O an..70**
+**Omschrijving soort afspraak F an..70**
 
 *xml tag:* OmsSrtAfspraak
 
-UITVOERDER AFSPRAAK 0..1, O
+UITVOERDER AFSPRAAK 0..1, F
 
 *document - afspraak - UITVOERDER AFSPRAAK*
 
@@ -919,7 +919,7 @@ UITVOERDER AFSPRAAK 0..1, O
 
 **<u>Naamgegevens</u>**
 
-**Achternaam/Achternamen R an..200**
+**Achternaam/Achternamen V an..200**
 
 *xml tag:* Achternaam
 
@@ -945,7 +945,7 @@ van de volgende namen:
 
 Bron: Genootschap Onze Taal
 
-**Voorletters O a..6**
+**Voorletters F a..6**
 
 *xml tag:* Voorl
 
@@ -957,7 +957,7 @@ Alleen alfabetische tekens zijn toegestaan.
 
 Bron: Loonaangifte.
 
-**Roepnaam O a..35**
+**Roepnaam F a..35**
 
 *xml tag:* Roepnaam
 
@@ -965,7 +965,7 @@ Voornaam waarmee iemand wordt aangesproken.
 
 **<u>Overige gegevens</u>**
 
-**Geslachtsaanduiding, code O an1**
+**Geslachtsaanduiding, code F an1**
 
 *xml tag:* GslchtCd
 
@@ -982,6 +982,6 @@ O Onbekend/niet gespecificeerd
 
 V Vrouw
 
-**Naam functie R an..35**
+**Naam functie V an..35**
 
 *xml tag:* NmFnct
