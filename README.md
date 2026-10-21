@@ -29,14 +29,12 @@ De functionele beschrijvingen zijn ook als Markdown beschikbaar in deze reposito
 
 De XSD-bestanden staan ook in de repository zodat technische wijzigingen tussen releases zichtbaar zijn.
 
-## Algemene documentatie
+## Algemene documentatie vragen of verzoeken
 
-Documentatie die voor meerdere koppelvlakken geldt, staat centraal in de repository **Verzuimstandaard**. Het gaat nu om de koppevlakspecificaties.
+Ga voor Koppelvlakspecificaties en voor het stellen van vragen naar  de repository **Verzuimstandaard** https://github.com/Stichting-SIVI/Verzuimstandaard. 
 
-## Vragen en wijzigingsverzoeken
-
-Neem voor opmerkingen of vragen contact op met SIVI. In GitHub kan dat via de repository **Verzuimstandaard**.
-
+Deze omgeving bevat de documentatie die voor alle koppelvlakken geldt en de contactmogelijkheden: stuur vragen of wijzigingsverzoeken aan SIVI, of deel issues en ervaringen in de open discussie.
+ 
 ## Beheer
 
 SIVI beheert de Verzuimstandaard.
