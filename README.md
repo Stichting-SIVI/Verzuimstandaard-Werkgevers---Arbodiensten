@@ -8,7 +8,7 @@ Dit koppelvlak ondersteunt de elektronische gegevensuitwisseling tussen werkgeve
 
 ## Releases
 
-SIVI publiceert releases van dit koppelvlak via GitHub Releases.
+SIVI publiceert releases van dit koppelvlak via GitHub Releases, rechts in het scherm.
 
 Arbodiensten ondersteunen de actuele versie en de twee versies ervoor tot maximaal de laatste major release. Dat betekent dat per 1 januari 2027 de volgende versies de actuele versies zijn: 2024, 2025 en 2026. 
 
